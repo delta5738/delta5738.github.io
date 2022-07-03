@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <script type="application/ld+json">
+
+{  
+  "@context":"http://schema.org",
+  "@type":"Website",
+  "@id":"https:\/\/delta5738.github.io",
+  "author": {
+    "@type": "Person",
+    "name": "LI MIN",
+    
+    "image": "https://www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c"
+    
+  },
+  "name":"Hugo tranquilpeak theme",
+  "description":"\u003ch1 id=\u0022html标签学习2\u0022\u003eHTML标签学习2\u003c\/h1\u003e\n\u003cp\u003edate: 2022-07-2\u003c\/p\u003e\n\u003ch2 id=\u0022难点1\u0022\u003e难点1\u003c\/h2\u003e\n\u003cul\u003e\n\u003cli\u003e\u0026lt;a\u0026gt; href\u003c!-- raw HTML omitted --\u003e\na标签可以通过它的 href 属性创建通向其他网页、文件、同一页面内的位置、电子邮件地址或任何其他 URL 的超链接;\u003c!-- raw HTML omitted --\u003e\ndownload属性,此属性指示浏览器下载 URL 而不是导航到它，因此将提示用户将其保存为本地文件;\u003c!-- raw HTML omitted --\u003e\n也可以执行JS伪协议,有时候会用来做一个点击之后没有动作的a标签;\u003c!-- raw HTML omitted --\u003e\n加入#id,可以查看指定内容;\u003c!-- raw HTML omitted --\u003e\na href=\u0026ldquo;mailto:XXX\u0026quot;可以发邮件到XXX邮箱;\u003c!-- raw HTML omitted --\u003e\na href=\u0026ldquo;tel:XXX\u0026quot;可以打电话到指定号码;\u003c!-- raw HTML omitted --\u003e\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch2 id=\u0022难点2\u0022\u003e难点2\u003c\/h2\u003e\n\u003cul\u003e\n\u003cli\u003e\u0026lt;a\u0026gt; target\u003c!-- raw HTML omitted --\u003e\na标签的target属性指定在何处显示链接的资源:\u003c!-- raw HTML omitted --\u003e\ntarget=\u0026quot;_self\u0026rdquo;: 当前页面加载\u003c!-- raw HTML omitted --\u003e\ntarget=\u0026quot;_blank\u0026rdquo;: 新窗口打开\u003c!-- raw HTML omitted --\u003e\ntarget=\u0026quot;_parent\u0026quot;: 在当前链接框架上一级标签打开页面\u003c!-- raw HTML omitted --\u003e\ntarget=\u0026quot;_top\u0026quot;: 在顶级窗口打开页面\u003c!-- raw HTML omitted --\u003e\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch2 id=\u0022难点3\u0022\u003e难点3\u003c\/h2\u003e\n\u003cul\u003e\n\u003cli\u003e\u0026lt;iframe\u0026gt;内嵌窗口,但是已经很少用了 \u003c!-- raw HTML omitted --\u003e\nname属性用于定位嵌入的浏览上下文的名称。该名称可以用作 a标签与 form标签的 target 属性值，还可以用作 window.open() 方法的 windowName 参数值\u003c!-- raw HTML omitted --\u003e\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch2 id=\u0022难点4\u0022\u003e难点4\u003c\/h2\u003e\n\u003cul\u003e\n\u003cli\u003e\u0026lt;table\u0026gt;\u003c!-- raw HTML omitted --\u003e\ntable标签表示表格数据 — 即通过二维数据表表示的信息\u003c!-- raw HTML omitted --\u003e\ntable标签只能含有3个元素thead,tbody,tfoot以及\u003c!-- raw HTML omitted --\u003e\n\u0026lt;th\u0026gt;元素定义表格内的表头单元格\u003c!-- raw HTML omitted --\u003e\n\u0026lt;td\u0026gt;元素定义了一个包含数据的表格单元格\u003c!-- raw HTML omitted --\u003e\n如果没写thead,tbody,tfoot,只写了th和td,浏览器补全thead,tbody,tfoot\u003c!-- raw HTML omitted --\u003e\u003c\/li\u003e\n\u003cli\u003etable-layout CSS 属性定义了用于布局表格单元格，行和列的算法\u003c!-- raw HTML omitted --\u003e\ntable-layout: fixed表格行和列的宽度通过表格的宽度来设置，某一列的宽度仅由该列首行的单元格决定。在当前列中，该单元格所在行之后的行并不会影响整个列宽;\u003c!-- raw HTML omitted --\u003e\nauto:大多数浏览器采用自动表格布局算法对表格布局。表格及单元格的宽度取决于其包含的内容。\u003c!-- raw HTML omitted --\u003e\nborder-collapse CSS 属性是用来决定表格的边框是分开的还是合并的。在分隔模式下，相邻的单元格都拥有独立的边框。\u003c!-- raw HTML omitted --\u003e在合并模式下，相邻单元格共享边框。\u003c!-- raw HTML omitted --\u003e\u003c!-- raw HTML omitted --\u003e\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch2 id=\u0022难点5\u0022\u003e难点5\u003c\/h2\u003e\n\u003cul\u003e\n\u003cli\u003e\u0026lt;img\u0026gt;\u003c!-- raw HTML omitted --\u003e\nimg标签将一份图像嵌入文档,它发出一个GET请求,展示一张图片.\u003c!-- raw HTML omitted --\u003e\nsrc 属性是必须的，它包含了你想嵌入的图片的文件路径\u003c!-- raw HTML omitted --\u003e\nalt 属性如果由于某种原因无法加载图像，普通浏览器也会在页面上显示alt 属性中的备用文本：例如，网络错误、内容被屏蔽或链接过期时。\u003c!-- raw HTML omitted --\u003e\n例子:\u0026lt;img\u0026gt;\u0026lt; class=\u0026ldquo;fit-picture\u0026rdquo;\nsrc=\u0026quot;\/media\/cc0-images\/grapefruit-slice-332-332.jpg\u0026quot;\nalt=\u0026ldquo;图形加载失败\u0026rdquo;\u0026gt;\u003c!-- raw HTML omitted --\u003e\nheight属性指定图像高度,单位是CSS像素\u003c!-- raw HTML omitted --\u003e\nwidth属性指定图像宽度,单位是CSS像素\u003c!-- raw HTML omitted --\u003e\u003c\/li\u003e\n\u003cli\u003e\u003c!-- raw HTML omitted --\u003e注意!永远不要让图片变形\u003c!-- raw HTML omitted --\u003e\u003c\/li\u003e\n\u003cli\u003eonerror事件,用来替代出错时的图\u003c\/li\u003e\n\u003cli\u003e响应式:max-width 属性用来给元素设置最大宽度值。定义了 max-width 的元素会在达到 max-width 值之后避免进一步按照 width 属性设置变大。(手机页面适用)\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch2 id=\u0022难点6-表单\u0022\u003e难点6 表单\u003c\/h2\u003e\n\u003cul\u003e\n\u003cli\u003e\u0026lt;form\u0026gt;\u003c!-- raw HTML omitted --\u003e\nform标签表示文档中的一个区域，此区域包含交互控件，用于向 Web 服务器提交信息。\u003c!-- raw HTML omitted --\u003e\naction属性处理表单提交的 URL;\u003c!-- raw HTML omitted --\u003e\nmethod属性浏览器使用这种 HTTP 方式来提交表单,可能的有;POST;GET等\u003c!-- raw HTML omitted --\u003e\nautocomplete属性用于指示 input 元素是否能够拥有一个默认值，此默认值是由浏览器自动补全的。\u003c!-- raw HTML omitted --\u003e\ntarget属性表示在提交表单之后，在哪里显示响应信息。\u003c!-- raw HTML omitted --\u003e\u003c\/li\u003e\n\u003cli\u003e\u0026lt;input\u0026gt;\u003c!-- raw HTML omitted --\u003e\ninput标签用于为基于 Web 的表单创建交互式控件，以便接受来自用户的数据; 里面最好不要有任何数据和标签\u003c\/li\u003e\n\u003cli\u003e\u0026lt;button\u0026gt;\u003c!-- raw HTML omitted --\u003e\nbutton标签表示一个可点击的按钮，可以用在表单或文档其它需要使用简单标准按钮的地方。里面可以含有标签和数据;\u003c!-- raw HTML omitted --\u003e\u003c\/li\u003e\n\u003cli\u003einput type 还可以是text,color,password,radio,checkbox(可以name来确定是否是一组的),file(用multiple多选文件),hidden(一般用来给机器输入)等\u003c\/li\u003e\n\u003cli\u003etextarea标签表示一个多行纯文本编辑控件，当你希望用户输入一段相当长的、不限格式的文本，例如评论或反馈表单中的一段意见时，这很有用。\u003c\/li\u003e\n\u003cli\u003eselect标签表示一个提供选项菜单的控件\u003c\/li\u003e\n\u003cli\u003eonchange用户输入改变的时候触发的事件;onfocus事件是用户鼠标集中到身上的时候触发的事件;onblur是用户鼠标出来的时候触发的事件\u003c\/li\u003e\n\u003cli\u003eHTML5有自带验证器\u003c\/li\u003e\n\u003cli\u003e注意:1.一般不监听input的click事件;2.input都要有name属性;3.\u003c!-- raw HTML omitted --\u003e一个表单必须含有type=\u0026ldquo;submit\u0026quot;表单才可以提交;\u003c!-- raw HTML omitted --\u003e\u003c!-- raw HTML omitted --\u003e\u003c\/li\u003e\n\u003c\/ul\u003e",
+  "url":"https:\/\/delta5738.github.io\/post\/html-markup-2\/",
+  "keywords":"[]"
+}
+
+</script>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.101.0 with theme Tranquilpeak 0.5.3-BETA">
+<meta name="author" content="LI MIN">
+<meta name="keywords" content="">
+<meta name="description" content="HTML标签学习2
+date: 2022-07-2
+难点1
+
+&lt;a&gt; href
+a标签可以通过它的 href 属性创建通向其他网页、文件、同一页面内的位置、电子邮件地址或任何其他 URL 的超链接;
+download属性,此属性指示浏览器下载 URL 而不是导航到它，因此将提示用户将其保存为本地文件;
+也可以执行JS伪协议,有时候会用来做一个点击之后没有动作的a标签;
+加入#id,可以查看指定内容;
+a href=&ldquo;mailto:XXX&quot;可以发邮件到XXX邮箱;
+a href=&ldquo;tel:XXX&quot;可以打电话到指定号码;
+
+难点2
+
+&lt;a&gt; target
+a标签的target属性指定在何处显示链接的资源:
+target=&quot;_self&rdquo;: 当前页面加载
+target=&quot;_blank&rdquo;: 新窗口打开
+target=&quot;_parent&quot;: 在当前链接框架上一级标签打开页面
+target=&quot;_top&quot;: 在顶级窗口打开页面
+
+难点3
+
+&lt;iframe&gt;内嵌窗口,但是已经很少用了 
+name属性用于定位嵌入的浏览上下文的名称。该名称可以用作 a标签与 form标签的 target 属性值，还可以用作 window.open() 方法的 windowName 参数值
+
+难点4
+
+&lt;table&gt;
+table标签表示表格数据 — 即通过二维数据表表示的信息
+table标签只能含有3个元素thead,tbody,tfoot以及
+&lt;th&gt;元素定义表格内的表头单元格
+&lt;td&gt;元素定义了一个包含数据的表格单元格
+如果没写thead,tbody,tfoot,只写了th和td,浏览器补全thead,tbody,tfoot
+table-layout CSS 属性定义了用于布局表格单元格，行和列的算法
+table-layout: fixed表格行和列的宽度通过表格的宽度来设置，某一列的宽度仅由该列首行的单元格决定。在当前列中，该单元格所在行之后的行并不会影响整个列宽;
+auto:大多数浏览器采用自动表格布局算法对表格布局。表格及单元格的宽度取决于其包含的内容。
+border-collapse CSS 属性是用来决定表格的边框是分开的还是合并的。在分隔模式下，相邻的单元格都拥有独立的边框。在合并模式下，相邻单元格共享边框。
+
+难点5
+
+&lt;img&gt;
+img标签将一份图像嵌入文档,它发出一个GET请求,展示一张图片.
+src 属性是必须的，它包含了你想嵌入的图片的文件路径
+alt 属性如果由于某种原因无法加载图像，普通浏览器也会在页面上显示alt 属性中的备用文本：例如，网络错误、内容被屏蔽或链接过期时。
+例子:&lt;img&gt;&lt; class=&ldquo;fit-picture&rdquo;
+src=&quot;/media/cc0-images/grapefruit-slice-332-332.jpg&quot;
+alt=&ldquo;图形加载失败&rdquo;&gt;
+height属性指定图像高度,单位是CSS像素
+width属性指定图像宽度,单位是CSS像素
+注意!永远不要让图片变形
+onerror事件,用来替代出错时的图
+响应式:max-width 属性用来给元素设置最大宽度值。定义了 max-width 的元素会在达到 max-width 值之后避免进一步按照 width 属性设置变大。(手机页面适用)
+
+难点6 表单
+
+&lt;form&gt;
+form标签表示文档中的一个区域，此区域包含交互控件，用于向 Web 服务器提交信息。
+action属性处理表单提交的 URL;
+method属性浏览器使用这种 HTTP 方式来提交表单,可能的有;POST;GET等
+autocomplete属性用于指示 input 元素是否能够拥有一个默认值，此默认值是由浏览器自动补全的。
+target属性表示在提交表单之后，在哪里显示响应信息。
+&lt;input&gt;
+input标签用于为基于 Web 的表单创建交互式控件，以便接受来自用户的数据; 里面最好不要有任何数据和标签
+&lt;button&gt;
+button标签表示一个可点击的按钮，可以用在表单或文档其它需要使用简单标准按钮的地方。里面可以含有标签和数据;
+input type 还可以是text,color,password,radio,checkbox(可以name来确定是否是一组的),file(用multiple多选文件),hidden(一般用来给机器输入)等
+textarea标签表示一个多行纯文本编辑控件，当你希望用户输入一段相当长的、不限格式的文本，例如评论或反馈表单中的一段意见时，这很有用。
+select标签表示一个提供选项菜单的控件
+onchange用户输入改变的时候触发的事件;onfocus事件是用户鼠标集中到身上的时候触发的事件;onblur是用户鼠标出来的时候触发的事件
+HTML5有自带验证器
+注意:1.一般不监听input的click事件;2.input都要有name属性;3.一个表单必须含有type=&ldquo;submit&quot;表单才可以提交;
+">
+
+
+<meta property="og:description" content="HTML标签学习2
+date: 2022-07-2
+难点1
+
+&lt;a&gt; href
+a标签可以通过它的 href 属性创建通向其他网页、文件、同一页面内的位置、电子邮件地址或任何其他 URL 的超链接;
+download属性,此属性指示浏览器下载 URL 而不是导航到它，因此将提示用户将其保存为本地文件;
+也可以执行JS伪协议,有时候会用来做一个点击之后没有动作的a标签;
+加入#id,可以查看指定内容;
+a href=&ldquo;mailto:XXX&quot;可以发邮件到XXX邮箱;
+a href=&ldquo;tel:XXX&quot;可以打电话到指定号码;
+
+难点2
+
+&lt;a&gt; target
+a标签的target属性指定在何处显示链接的资源:
+target=&quot;_self&rdquo;: 当前页面加载
+target=&quot;_blank&rdquo;: 新窗口打开
+target=&quot;_parent&quot;: 在当前链接框架上一级标签打开页面
+target=&quot;_top&quot;: 在顶级窗口打开页面
+
+难点3
+
+&lt;iframe&gt;内嵌窗口,但是已经很少用了 
+name属性用于定位嵌入的浏览上下文的名称。该名称可以用作 a标签与 form标签的 target 属性值，还可以用作 window.open() 方法的 windowName 参数值
+
+难点4
+
+&lt;table&gt;
+table标签表示表格数据 — 即通过二维数据表表示的信息
+table标签只能含有3个元素thead,tbody,tfoot以及
+&lt;th&gt;元素定义表格内的表头单元格
+&lt;td&gt;元素定义了一个包含数据的表格单元格
+如果没写thead,tbody,tfoot,只写了th和td,浏览器补全thead,tbody,tfoot
+table-layout CSS 属性定义了用于布局表格单元格，行和列的算法
+table-layout: fixed表格行和列的宽度通过表格的宽度来设置，某一列的宽度仅由该列首行的单元格决定。在当前列中，该单元格所在行之后的行并不会影响整个列宽;
+auto:大多数浏览器采用自动表格布局算法对表格布局。表格及单元格的宽度取决于其包含的内容。
+border-collapse CSS 属性是用来决定表格的边框是分开的还是合并的。在分隔模式下，相邻的单元格都拥有独立的边框。在合并模式下，相邻单元格共享边框。
+
+难点5
+
+&lt;img&gt;
+img标签将一份图像嵌入文档,它发出一个GET请求,展示一张图片.
+src 属性是必须的，它包含了你想嵌入的图片的文件路径
+alt 属性如果由于某种原因无法加载图像，普通浏览器也会在页面上显示alt 属性中的备用文本：例如，网络错误、内容被屏蔽或链接过期时。
+例子:&lt;img&gt;&lt; class=&ldquo;fit-picture&rdquo;
+src=&quot;/media/cc0-images/grapefruit-slice-332-332.jpg&quot;
+alt=&ldquo;图形加载失败&rdquo;&gt;
+height属性指定图像高度,单位是CSS像素
+width属性指定图像宽度,单位是CSS像素
+注意!永远不要让图片变形
+onerror事件,用来替代出错时的图
+响应式:max-width 属性用来给元素设置最大宽度值。定义了 max-width 的元素会在达到 max-width 值之后避免进一步按照 width 属性设置变大。(手机页面适用)
+
+难点6 表单
+
+&lt;form&gt;
+form标签表示文档中的一个区域，此区域包含交互控件，用于向 Web 服务器提交信息。
+action属性处理表单提交的 URL;
+method属性浏览器使用这种 HTTP 方式来提交表单,可能的有;POST;GET等
+autocomplete属性用于指示 input 元素是否能够拥有一个默认值，此默认值是由浏览器自动补全的。
+target属性表示在提交表单之后，在哪里显示响应信息。
+&lt;input&gt;
+input标签用于为基于 Web 的表单创建交互式控件，以便接受来自用户的数据; 里面最好不要有任何数据和标签
+&lt;button&gt;
+button标签表示一个可点击的按钮，可以用在表单或文档其它需要使用简单标准按钮的地方。里面可以含有标签和数据;
+input type 还可以是text,color,password,radio,checkbox(可以name来确定是否是一组的),file(用multiple多选文件),hidden(一般用来给机器输入)等
+textarea标签表示一个多行纯文本编辑控件，当你希望用户输入一段相当长的、不限格式的文本，例如评论或反馈表单中的一段意见时，这很有用。
+select标签表示一个提供选项菜单的控件
+onchange用户输入改变的时候触发的事件;onfocus事件是用户鼠标集中到身上的时候触发的事件;onblur是用户鼠标出来的时候触发的事件
+HTML5有自带验证器
+注意:1.一般不监听input的click事件;2.input都要有name属性;3.一个表单必须含有type=&ldquo;submit&quot;表单才可以提交;
+">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Html Markup 2">
+<meta name="twitter:title" content="Html Markup 2">
+<meta property="og:url" content="https://delta5738.github.io/post/html-markup-2/">
+<meta property="twitter:url" content="https://delta5738.github.io/post/html-markup-2/">
+<meta property="og:site_name" content="Hugo tranquilpeak theme">
+<meta property="og:description" content="HTML标签学习2
+date: 2022-07-2
+难点1
+
+&lt;a&gt; href
+a标签可以通过它的 href 属性创建通向其他网页、文件、同一页面内的位置、电子邮件地址或任何其他 URL 的超链接;
+download属性,此属性指示浏览器下载 URL 而不是导航到它，因此将提示用户将其保存为本地文件;
+也可以执行JS伪协议,有时候会用来做一个点击之后没有动作的a标签;
+加入#id,可以查看指定内容;
+a href=&ldquo;mailto:XXX&quot;可以发邮件到XXX邮箱;
+a href=&ldquo;tel:XXX&quot;可以打电话到指定号码;
+
+难点2
+
+&lt;a&gt; target
+a标签的target属性指定在何处显示链接的资源:
+target=&quot;_self&rdquo;: 当前页面加载
+target=&quot;_blank&rdquo;: 新窗口打开
+target=&quot;_parent&quot;: 在当前链接框架上一级标签打开页面
+target=&quot;_top&quot;: 在顶级窗口打开页面
+
+难点3
+
+&lt;iframe&gt;内嵌窗口,但是已经很少用了 
+name属性用于定位嵌入的浏览上下文的名称。该名称可以用作 a标签与 form标签的 target 属性值，还可以用作 window.open() 方法的 windowName 参数值
+
+难点4
+
+&lt;table&gt;
+table标签表示表格数据 — 即通过二维数据表表示的信息
+table标签只能含有3个元素thead,tbody,tfoot以及
+&lt;th&gt;元素定义表格内的表头单元格
+&lt;td&gt;元素定义了一个包含数据的表格单元格
+如果没写thead,tbody,tfoot,只写了th和td,浏览器补全thead,tbody,tfoot
+table-layout CSS 属性定义了用于布局表格单元格，行和列的算法
+table-layout: fixed表格行和列的宽度通过表格的宽度来设置，某一列的宽度仅由该列首行的单元格决定。在当前列中，该单元格所在行之后的行并不会影响整个列宽;
+auto:大多数浏览器采用自动表格布局算法对表格布局。表格及单元格的宽度取决于其包含的内容。
+border-collapse CSS 属性是用来决定表格的边框是分开的还是合并的。在分隔模式下，相邻的单元格都拥有独立的边框。在合并模式下，相邻单元格共享边框。
+
+难点5
+
+&lt;img&gt;
+img标签将一份图像嵌入文档,它发出一个GET请求,展示一张图片.
+src 属性是必须的，它包含了你想嵌入的图片的文件路径
+alt 属性如果由于某种原因无法加载图像，普通浏览器也会在页面上显示alt 属性中的备用文本：例如，网络错误、内容被屏蔽或链接过期时。
+例子:&lt;img&gt;&lt; class=&ldquo;fit-picture&rdquo;
+src=&quot;/media/cc0-images/grapefruit-slice-332-332.jpg&quot;
+alt=&ldquo;图形加载失败&rdquo;&gt;
+height属性指定图像高度,单位是CSS像素
+width属性指定图像宽度,单位是CSS像素
+注意!永远不要让图片变形
+onerror事件,用来替代出错时的图
+响应式:max-width 属性用来给元素设置最大宽度值。定义了 max-width 的元素会在达到 max-width 值之后避免进一步按照 width 属性设置变大。(手机页面适用)
+
+难点6 表单
+
+&lt;form&gt;
+form标签表示文档中的一个区域，此区域包含交互控件，用于向 Web 服务器提交信息。
+action属性处理表单提交的 URL;
+method属性浏览器使用这种 HTTP 方式来提交表单,可能的有;POST;GET等
+autocomplete属性用于指示 input 元素是否能够拥有一个默认值，此默认值是由浏览器自动补全的。
+target属性表示在提交表单之后，在哪里显示响应信息。
+&lt;input&gt;
+input标签用于为基于 Web 的表单创建交互式控件，以便接受来自用户的数据; 里面最好不要有任何数据和标签
+&lt;button&gt;
+button标签表示一个可点击的按钮，可以用在表单或文档其它需要使用简单标准按钮的地方。里面可以含有标签和数据;
+input type 还可以是text,color,password,radio,checkbox(可以name来确定是否是一组的),file(用multiple多选文件),hidden(一般用来给机器输入)等
+textarea标签表示一个多行纯文本编辑控件，当你希望用户输入一段相当长的、不限格式的文本，例如评论或反馈表单中的一段意见时，这很有用。
+select标签表示一个提供选项菜单的控件
+onchange用户输入改变的时候触发的事件;onfocus事件是用户鼠标集中到身上的时候触发的事件;onblur是用户鼠标出来的时候触发的事件
+HTML5有自带验证器
+注意:1.一般不监听input的click事件;2.input都要有name属性;3.一个表单必须含有type=&ldquo;submit&quot;表单才可以提交;
+">
+<meta name="twitter:description" content="HTML标签学习2
+date: 2022-07-2
+难点1
+
+&lt;a&gt; href
+a标签可以通过它的 href 属性创建通向其他网页、文件、同一页面内的位置、电子邮件地址或任何其他 URL 的超链接;
+download属性,此属性指示浏览器下载 URL 而不是导航到它，因此将提示用户将其保存为本地文件;
+也可以执行JS伪协议,有时候会用来做一个点击之后没有动作的a标签;
+加入#id,可以查看指定内容;
+a href=&ldquo;mailto:XXX&quot;可以发邮件到XXX邮箱;
+a href=&ldquo;tel:XXX&quot;可以打电话到指定号码;
+
+难点2
+
+&lt;a&gt; target
+a标签的target属性指定在何处显示链接的资源:
+target=&quot;_self&rdquo;: 当前页面加载
+target=&quot;_blank&rdquo;: 新窗口打开
+target=&quot;_parent&quot;: 在当前链接框架上一级标签打开页面
+target=&quot;_top&quot;: 在顶级窗口打开页面
+
+难点3
+
+&lt;iframe&gt;内嵌窗口,但是已经很少用了 
+name属性用于定位嵌入的浏览上下文的名称。该名称可以用作 a标签与 form标签的 target 属性值，还可以用作 window.open() 方法的 windowName 参数值
+
+难点4
+
+&lt;table&gt;
+table标签表示表格数据 — 即通过二维数据表表示的信息
+table标签只能含有3个元素thead,tbody,tfoot以及
+&lt;th&gt;元素定义表格内的表头单元格
+&lt;td&gt;元素定义了一个包含数据的表格单元格
+如果没写thead,tbody,tfoot,只写了th和td,浏览器补全thead,tbody,tfoot
+table-layout CSS 属性定义了用于布局表格单元格，行和列的算法
+table-layout: fixed表格行和列的宽度通过表格的宽度来设置，某一列的宽度仅由该列首行的单元格决定。在当前列中，该单元格所在行之后的行并不会影响整个列宽;
+auto:大多数浏览器采用自动表格布局算法对表格布局。表格及单元格的宽度取决于其包含的内容。
+border-collapse CSS 属性是用来决定表格的边框是分开的还是合并的。在分隔模式下，相邻的单元格都拥有独立的边框。在合并模式下，相邻单元格共享边框。
+
+难点5
+
+&lt;img&gt;
+img标签将一份图像嵌入文档,它发出一个GET请求,展示一张图片.
+src 属性是必须的，它包含了你想嵌入的图片的文件路径
+alt 属性如果由于某种原因无法加载图像，普通浏览器也会在页面上显示alt 属性中的备用文本：例如，网络错误、内容被屏蔽或链接过期时。
+例子:&lt;img&gt;&lt; class=&ldquo;fit-picture&rdquo;
+src=&quot;/media/cc0-images/grapefruit-slice-332-332.jpg&quot;
+alt=&ldquo;图形加载失败&rdquo;&gt;
+height属性指定图像高度,单位是CSS像素
+width属性指定图像宽度,单位是CSS像素
+注意!永远不要让图片变形
+onerror事件,用来替代出错时的图
+响应式:max-width 属性用来给元素设置最大宽度值。定义了 max-width 的元素会在达到 max-width 值之后避免进一步按照 width 属性设置变大。(手机页面适用)
+
+难点6 表单
+
+&lt;form&gt;
+form标签表示文档中的一个区域，此区域包含交互控件，用于向 Web 服务器提交信息。
+action属性处理表单提交的 URL;
+method属性浏览器使用这种 HTTP 方式来提交表单,可能的有;POST;GET等
+autocomplete属性用于指示 input 元素是否能够拥有一个默认值，此默认值是由浏览器自动补全的。
+target属性表示在提交表单之后，在哪里显示响应信息。
+&lt;input&gt;
+input标签用于为基于 Web 的表单创建交互式控件，以便接受来自用户的数据; 里面最好不要有任何数据和标签
+&lt;button&gt;
+button标签表示一个可点击的按钮，可以用在表单或文档其它需要使用简单标准按钮的地方。里面可以含有标签和数据;
+input type 还可以是text,color,password,radio,checkbox(可以name来确定是否是一组的),file(用multiple多选文件),hidden(一般用来给机器输入)等
+textarea标签表示一个多行纯文本编辑控件，当你希望用户输入一段相当长的、不限格式的文本，例如评论或反馈表单中的一段意见时，这很有用。
+select标签表示一个提供选项菜单的控件
+onchange用户输入改变的时候触发的事件;onfocus事件是用户鼠标集中到身上的时候触发的事件;onblur是用户鼠标出来的时候触发的事件
+HTML5有自带验证器
+注意:1.一般不监听input的click事件;2.input都要有name属性;3.一个表单必须含有type=&ldquo;submit&quot;表单才可以提交;
+">
+<meta property="og:locale" content="zh-cn">
+
+  
+    <meta property="article:published_time" content="2022-07-04T01:04:12">
+  
+  
+    <meta property="article:modified_time" content="2022-07-04T01:04:12">
+  
+  
+  
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c?s=640">
+  <meta property="twitter:image" content="https://www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c?s=640">
+
+
+
+
+
+
+    <title>Html Markup 2</title>
+
+    <link rel="icon" href="https://delta5738.github.io/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://delta5738.github.io/post/html-markup-2/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    
+    <link rel="stylesheet" href="https://delta5738.github.io/css/style-h6ccsoet3mzkbb0wngshlfbaweimexgqcxj0h5hu4h82olsdzz6wmqdkajm.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://delta5738.github.io/" aria-label="去首页">Hugo tranquilpeak theme</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://delta5738.github.io/#about" aria-label="打开链接: /#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c?s=90" alt="作者的图片" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://delta5738.github.io/#about" aria-label="阅读有关作者的更多信息">
+          <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c?s=110" alt="作者的图片" />
+        </a>
+        <h4 class="sidebar-profile-name">LI MIN</h4>
+        
+          <h5 class="sidebar-profile-bio">Super bio with markdown support <strong>COOL</strong></h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://delta5738.github.io/" title="Home">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-home" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">首页</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://delta5738.github.io/categories" title="Categories">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-bookmark" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">分类</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://delta5738.github.io/tags" title="Tags">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-tags" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">标签</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://delta5738.github.io/archives" title="Archives">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-archive" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">归档</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://delta5738.github.io/#about" title="About">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-question" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">关于</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/kakawait" target="_blank" rel="noopener" title="GitHub">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-github" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://stackoverflow.com/users/636472/kakawait" target="_blank" rel="noopener" title="Stack Overflow">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-stack-overflow" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Stack Overflow</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://delta5738.github.io/index.xml" title="RSS">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-rss" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" id="top">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title">
+      Html Markup 2
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time datetime="2022-07-04T01:04:12&#43;09:00">
+        
+  七月 4, 2022
+
+      </time>
+    
+    
+  </div>
+
+</div>
+          
+          <div class="post-content markdown">
+            <div class="main-content-wrap">
+              <h1 id="html标签学习2">HTML标签学习2</h1>
+<p>date: 2022-07-2</p>
+<h2 id="难点1">难点1</h2>
+<ul>
+<li>&lt;a&gt; href<!-- raw HTML omitted -->
+a标签可以通过它的 href 属性创建通向其他网页、文件、同一页面内的位置、电子邮件地址或任何其他 URL 的超链接;<!-- raw HTML omitted -->
+download属性,此属性指示浏览器下载 URL 而不是导航到它，因此将提示用户将其保存为本地文件;<!-- raw HTML omitted -->
+也可以执行JS伪协议,有时候会用来做一个点击之后没有动作的a标签;<!-- raw HTML omitted -->
+加入#id,可以查看指定内容;<!-- raw HTML omitted -->
+a href=&ldquo;mailto:XXX&quot;可以发邮件到XXX邮箱;<!-- raw HTML omitted -->
+a href=&ldquo;tel:XXX&quot;可以打电话到指定号码;<!-- raw HTML omitted --></li>
+</ul>
+<h2 id="难点2">难点2</h2>
+<ul>
+<li>&lt;a&gt; target<!-- raw HTML omitted -->
+a标签的target属性指定在何处显示链接的资源:<!-- raw HTML omitted -->
+target=&quot;_self&rdquo;: 当前页面加载<!-- raw HTML omitted -->
+target=&quot;_blank&rdquo;: 新窗口打开<!-- raw HTML omitted -->
+target=&quot;_parent&quot;: 在当前链接框架上一级标签打开页面<!-- raw HTML omitted -->
+target=&quot;_top&quot;: 在顶级窗口打开页面<!-- raw HTML omitted --></li>
+</ul>
+<h2 id="难点3">难点3</h2>
+<ul>
+<li>&lt;iframe&gt;内嵌窗口,但是已经很少用了 <!-- raw HTML omitted -->
+name属性用于定位嵌入的浏览上下文的名称。该名称可以用作 a标签与 form标签的 target 属性值，还可以用作 window.open() 方法的 windowName 参数值<!-- raw HTML omitted --></li>
+</ul>
+<h2 id="难点4">难点4</h2>
+<ul>
+<li>&lt;table&gt;<!-- raw HTML omitted -->
+table标签表示表格数据 — 即通过二维数据表表示的信息<!-- raw HTML omitted -->
+table标签只能含有3个元素thead,tbody,tfoot以及<!-- raw HTML omitted -->
+&lt;th&gt;元素定义表格内的表头单元格<!-- raw HTML omitted -->
+&lt;td&gt;元素定义了一个包含数据的表格单元格<!-- raw HTML omitted -->
+如果没写thead,tbody,tfoot,只写了th和td,浏览器补全thead,tbody,tfoot<!-- raw HTML omitted --></li>
+<li>table-layout CSS 属性定义了用于布局表格单元格，行和列的算法<!-- raw HTML omitted -->
+table-layout: fixed表格行和列的宽度通过表格的宽度来设置，某一列的宽度仅由该列首行的单元格决定。在当前列中，该单元格所在行之后的行并不会影响整个列宽;<!-- raw HTML omitted -->
+auto:大多数浏览器采用自动表格布局算法对表格布局。表格及单元格的宽度取决于其包含的内容。<!-- raw HTML omitted -->
+border-collapse CSS 属性是用来决定表格的边框是分开的还是合并的。在分隔模式下，相邻的单元格都拥有独立的边框。<!-- raw HTML omitted -->在合并模式下，相邻单元格共享边框。<!-- raw HTML omitted --><!-- raw HTML omitted --></li>
+</ul>
+<h2 id="难点5">难点5</h2>
+<ul>
+<li>&lt;img&gt;<!-- raw HTML omitted -->
+img标签将一份图像嵌入文档,它发出一个GET请求,展示一张图片.<!-- raw HTML omitted -->
+src 属性是必须的，它包含了你想嵌入的图片的文件路径<!-- raw HTML omitted -->
+alt 属性如果由于某种原因无法加载图像，普通浏览器也会在页面上显示alt 属性中的备用文本：例如，网络错误、内容被屏蔽或链接过期时。<!-- raw HTML omitted -->
+例子:&lt;img&gt;&lt; class=&ldquo;fit-picture&rdquo;
+src=&quot;/media/cc0-images/grapefruit-slice-332-332.jpg&quot;
+alt=&ldquo;图形加载失败&rdquo;&gt;<!-- raw HTML omitted -->
+height属性指定图像高度,单位是CSS像素<!-- raw HTML omitted -->
+width属性指定图像宽度,单位是CSS像素<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->注意!永远不要让图片变形<!-- raw HTML omitted --></li>
+<li>onerror事件,用来替代出错时的图</li>
+<li>响应式:max-width 属性用来给元素设置最大宽度值。定义了 max-width 的元素会在达到 max-width 值之后避免进一步按照 width 属性设置变大。(手机页面适用)</li>
+</ul>
+<h2 id="难点6-表单">难点6 表单</h2>
+<ul>
+<li>&lt;form&gt;<!-- raw HTML omitted -->
+form标签表示文档中的一个区域，此区域包含交互控件，用于向 Web 服务器提交信息。<!-- raw HTML omitted -->
+action属性处理表单提交的 URL;<!-- raw HTML omitted -->
+method属性浏览器使用这种 HTTP 方式来提交表单,可能的有;POST;GET等<!-- raw HTML omitted -->
+autocomplete属性用于指示 input 元素是否能够拥有一个默认值，此默认值是由浏览器自动补全的。<!-- raw HTML omitted -->
+target属性表示在提交表单之后，在哪里显示响应信息。<!-- raw HTML omitted --></li>
+<li>&lt;input&gt;<!-- raw HTML omitted -->
+input标签用于为基于 Web 的表单创建交互式控件，以便接受来自用户的数据; 里面最好不要有任何数据和标签</li>
+<li>&lt;button&gt;<!-- raw HTML omitted -->
+button标签表示一个可点击的按钮，可以用在表单或文档其它需要使用简单标准按钮的地方。里面可以含有标签和数据;<!-- raw HTML omitted --></li>
+<li>input type 还可以是text,color,password,radio,checkbox(可以name来确定是否是一组的),file(用multiple多选文件),hidden(一般用来给机器输入)等</li>
+<li>textarea标签表示一个多行纯文本编辑控件，当你希望用户输入一段相当长的、不限格式的文本，例如评论或反馈表单中的一段意见时，这很有用。</li>
+<li>select标签表示一个提供选项菜单的控件</li>
+<li>onchange用户输入改变的时候触发的事件;onfocus事件是用户鼠标集中到身上的时候触发的事件;onblur是用户鼠标出来的时候触发的事件</li>
+<li>HTML5有自带验证器</li>
+<li>注意:1.一般不监听input的click事件;2.input都要有name属性;3.<!-- raw HTML omitted -->一个表单必须含有type=&ldquo;submit&quot;表单才可以提交;<!-- raw HTML omitted --><!-- raw HTML omitted --></li>
+</ul>
+              
+
+
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+            
+            
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--disabled">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://delta5738.github.io/post/html-markup-1/" data-tooltip="Html Markup 1" aria-label="上一篇: Html Markup 1">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="分享这个帖子">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://delta5738.github.io/post/html-markup-2/" title="分享到 Facebook" aria-label="分享到 Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://delta5738.github.io/post/html-markup-2/" title="分享到 Twitter" aria-label="分享到 Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://delta5738.github.io/post/html-markup-2/" title="分享到 Linkedin" aria-label="分享到 Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+    <li class="post-action">
+      <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="发表评论">
+        <i class="far fa-comment"></i>
+      </a>
+    </li>
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="回到顶部">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+            
+  
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+    <script type="text/javascript">
+      var disqus_config = function() {
+        this.page.url = 'https:\/\/delta5738.github.io\/post\/html-markup-2\/';
+        
+          this.page.identifier = '\/post\/html-markup-2\/'
+        
+      };
+      (function() {
+        
+        
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+          document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+          return;
+        }
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = 'hugo-tranquilpeak-theme';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+  
+
+
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2022 LI MIN. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--disabled">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://delta5738.github.io/post/html-markup-1/" data-tooltip="Html Markup 1" aria-label="上一篇: Html Markup 1">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="分享这个帖子">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://delta5738.github.io/post/html-markup-2/" title="分享到 Facebook" aria-label="分享到 Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://delta5738.github.io/post/html-markup-2/" title="分享到 Twitter" aria-label="分享到 Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://delta5738.github.io/post/html-markup-2/" title="分享到 Linkedin" aria-label="分享到 Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+    <li class="post-action">
+      <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="发表评论">
+        <i class="far fa-comment"></i>
+      </a>
+    </li>
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="回到顶部">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+      </div>
+      
+<div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-times"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdelta5738.github.io%2Fpost%2Fhtml-markup-2%2F" aria-label="分享到 Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i><span>分享到 Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fdelta5738.github.io%2Fpost%2Fhtml-markup-2%2F" aria-label="分享到 Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i><span>分享到 Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fdelta5738.github.io%2Fpost%2Fhtml-markup-2%2F" aria-label="分享到 Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i><span>分享到 Linkedin</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+
+
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-times"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c?s=110" alt="作者的图片" />
+    
+    <h4 id="about-card-name">LI MIN</h4>
+    
+      <div id="about-card-bio">Super bio with markdown support <strong>COOL</strong></div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Your job title
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker-alt"></i>
+        <br/>
+        France
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://delta5738.github.io/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js" integrity="sha512-z+/WWfyD5tccCukM4VvONpEtLmbAm5LDu7eKiyMQJ9m7OfPEDL7gENyDRL3Yfe8XAuGsS2fS4xSMnl6d30kqGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="https://delta5738.github.io/js/script-yqzy9wdlzix4lbbwdnzvwx3egsne77earqmn73v9uno8aupuph8wfguccut.min.js"></script>
+
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-gE8KAQyFIzV1C9+GZ8TKJHZS2s+n7EjNtC+IMRn1l5+WYJTHOODUM6JSjZhFhqXmc7bG8Av6XXpckA4tYhflnw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/apache.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-EWROca+bote+7Oaaar1F6y74iZj1r1F9rm/ly7o+/FwJopbBaWtsFDmaKoZDd3QiGU2pGacBirHJNivmGLYrow==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/go.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-GDVzAn0wpx1yVtQsRWmFc6PhJiLBPdUic+h4GWgljBh904O3JU10fk9EKNpVyIoPqkFn54rgL2QBG4BmUTMpiQ==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/http.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-UgZlma8NzkrDb/NWgmLIcTrH7i/CSnLLDRFqCSNF5NGPpjKmzyM25qcoXGOup8+cDakKyaiTDd7N4dyH4YT+IA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/less.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-lot9koe73sfXIrUvIPM/UEhuMciN56RPyBdOyZgfO53P2lkWyyXN7J+njcxIIBRV+nVDQeiWtiXg+bLAJZDTfg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/nginx.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-Zd3e7XxHP00TD0Imr0PIfeM0fl0v95kMWuhyAS3Wn1UTSXTkz0OhtRgBAr4JlmADRgiXr4x7lpeUdqaGN8xIog==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/puppet.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-qtqDO052iXMSP+5d/aE/jMtL9vIIGvONgTJziC2K/ZIB1yEGa55WVxGE9/08rSQ62EoDifS9SWVGZ7ihSLhzMA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/scss.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-1NmkjnEDnwwwcu28KoQF8vs3oaPFokQHbmbtwGhFfeDsQZtVFI8zW2aE9O8yMYdpdyKV/5blE4pSWw4Z/Sv97w==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/stylus.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-B2wSfruPjr8EJL6IIzQr1eAuDwrsfIfccNf/LCEdxELCgC/S/ZMt/Uvk80aD79m7IqOqW+Sw8nbkvha20yZpzg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/swift.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-28oDiQZGKUVN6wQ7PSLPNipOcmkCALXKwOi7bnkyFf8QiMZQxG9EQoy/iiNx6Zxj2cG2SbVa4dXKigQhu7GiFw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/yaml.min.js"></script>
+  
+
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      CommonHTML: { linebreaks: { automatic: true } },
+      tex2jax: { inlineMath: [ ['$', '$'], ['\\(','\\)'] ], displayMath: [ ['$$','$$'], ['\\[', '\\]'] ], processEscapes: false },
+      messageStyle: 'none'
+    });
+  </script>
+
+
+
+    
+  </body>
+</html>
+

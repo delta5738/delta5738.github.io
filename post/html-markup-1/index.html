@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <script type="application/ld+json">
+
+{  
+  "@context":"http://schema.org",
+  "@type":"Website",
+  "@id":"https:\/\/delta5738.github.io",
+  "author": {
+    "@type": "Person",
+    "name": "LI MIN",
+    
+    "image": "https://www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c"
+    
+  },
+  "name":"Hugo tranquilpeak theme",
+  "description":"\u003ch1 id=\u0022html入门笔记1\u0022\u003eHTML入门笔记1\u003c\/h1\u003e\n\u003cp\u003edate: 2022-06-28\u003c\/p\u003e\n\u003ch2 id=\u0022html发明者\u0022\u003eHTML发明者\u003c\/h2\u003e\n\u003cul\u003e\n\u003cli\u003e1980年，物理学家蒂姆·伯纳斯-李在欧洲核子研究中心（CERN）在承包工程期间，为使CERN的研究人员使用并共享文档，他提出并创建原型系统ENQUIRE。1989年，伯纳斯-李在一份备忘录中提出一个基于互联网的超文本系统[5]。他规定HTML并在1990年底写出浏览器和服务器软件。同年，伯纳斯-李与CERN的数据系统工程师罗伯特·卡里奥联合为项目申请资助，但未被CERN正式批准。在他的个人笔记中[6]伯纳斯-李列举“一些使用超文本的领域”，并把百科全书列为首位[7]。\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022https:\/\/zh.m.wikipedia.org\/zh\/HTML\u0022\u003ehttps:\/\/zh.m.wikipedia.org\/zh\/HTML\u003c\/a\u003e\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch2 id=\u0022html常用标签1\u0022\u003eHTML常用标签(1)\u003c\/h2\u003e\n\u003cul\u003e\n\u003cli\u003e\u003c!-- raw HTML omitted --\u003e\u0026lt;!DOCTYPE\u0026gt; \u003c!-- raw HTML omitted --\u003e\u003c!-- raw HTML omitted --\u003e\n\u003c!-- raw HTML omitted --\u003e!DOCTYPE标签应该位于html文档最前,处于HTML标签之前,它来告知浏览器使用了哪种HTML版本\u003c!-- raw HTML omitted --\u003e\u003c\/li\u003e\n\u003cli\u003e\u0026lt;html\u0026gt;  \u003c!-- raw HTML omitted --\u003e\nhtml表示一个 HTML 文档的根（顶级元素），所以它也被称为根元素。所有其他元素必须是此元素的后代。\u003c\/li\u003e\n\u003cli\u003e\u0026lt;head\u0026gt; \u003c!-- raw HTML omitted --\u003e\nhead标签规定文档相关配置信息元数据（Metadata）,包括文档标题,引用的文档样式等\u003c\/li\u003e\n\u003cli\u003e\u0026lt;meta\u0026gt; \u003c!-- raw HTML omitted --\u003e\nmeta标签用来表示HTML元数据的属性,如name,字符集等\u003c\/li\u003e\n\u003cli\u003e\u0026lt;title\u0026gt;\u003c!-- raw HTML omitted --\u003e\ntitle标签定义文档的标题，显示在Browser的标题栏或标签页上。它只应该包含文本，若是包含有标签，则它包含的任何标签都将被忽略\u003c\/li\u003e\n\u003cli\u003e\u0026lt;style\u0026gt;\u003c!-- raw HTML omitted --\u003e\nstyle标签元素包含文档的样式信息或者文档的部分内容\u003c\/li\u003e\n\u003cli\u003e\u0026lt;body\u0026gt;\u003c!-- raw HTML omitted --\u003e\nbody标签表示文档的内容\u003c\/li\u003e\n\u003cli\u003e\u0026lt;header\u0026gt;\u003c!-- raw HTML omitted --\u003e\nheader标签用于展示介绍性内容，通常包含一组介绍性的或是辅助导航的实用元素。它可能包含一些标题元素，但也可能包含其他元素，比如 Logo、搜索框、作者名称等\u003c\/li\u003e\n\u003cli\u003e\u0026lt;div\u0026gt;\u003c!-- raw HTML omitted --\u003e\ndiv标签是一个内容容器,在不使用CSS的情况下，其对内容或布局没有任何影响\u003c\/li\u003e\n\u003cli\u003e\u0026lt;main\u0026gt;\u003c!-- raw HTML omitted --\u003e\nmain标签呈现了文档的body或应用的主体部分。主体部分由与文档直接相关，或者扩展于文档的中心主题、应用的主要功能部分的内容组成\u003c\/li\u003e\n\u003cli\u003e\u0026lt;section\u0026gt;\u003c!-- raw HTML omitted --\u003e\nsection标签表示一个包含在 HTML 文档中的独立部分，它没有更具体的语义元素来表示，一般来说会有包含一个标题\u003c\/li\u003e\n\u003cli\u003e\u0026lt;h1-h6\u0026gt;\u003c!-- raw HTML omitted --\u003e\nh1-h6标签 (Heading) 呈现了六个不同的级别的标题，h1 级别最高，而 h6级别最低\u003c\/li\u003e\n\u003cli\u003e\u0026lt;p\u0026gt;\u003c!-- raw HTML omitted --\u003e\np标签表示文本的一个段落\u003c\/li\u003e\n\u003cli\u003e\u0026lt;ul\u0026gt;\u003c!-- raw HTML omitted --\u003e\nul标签表示一个内可含多个元素的无序列表或项目符号列表\u003c\/li\u003e\n\u003cli\u003e\u0026lt;li\u0026gt;\u003c!-- raw HTML omitted --\u003e\nli标签用于表示列表里的条目。它必须包含在一个父元素里：一个有序列表 (ol)，一个无序列表 (ul)，或者一个菜单 (menu)。在菜单或者无序列表里，列表条目通常用点排列显示；在有序列表里，列表条目通常在左边显示按升序排列的计数\u003c\/li\u003e\n\u003cli\u003e\u0026lt;dl\u0026gt;\u003c!-- raw HTML omitted --\u003e\ndl标签是一个包含术语定义以及描述的列表\u003c\/li\u003e\n\u003cli\u003e\u0026lt;pre\u0026gt;\u003c!-- raw HTML omitted --\u003e\npre标签表示预定义格式文本。在该元素中的文本通常按照原文件中的编排，以等宽字体的形式展现出来，文本中的空白符（比如空格和换行符）都会显示出来。(紧跟在pre开始标签后的换行符也会被省略)\u003c\/li\u003e\n\u003cli\u003e\u0026lt;code\u0026gt;\u003c!-- raw HTML omitted --\u003e\ncode标签呈现一段计算机代码。默认情况下，它以浏览器的默认等宽字体显示\u003c\/li\u003e\n\u003cli\u003e\u0026lt;em\u0026gt;\u003c!-- raw HTML omitted --\u003e\nem标签标记出需要用户着重阅读的内容\u003c\/li\u003e\n\u003cli\u003e\u0026lt;strong\u0026gt;\u003c!-- raw HTML omitted --\u003e\nstrong标签表示文本十分重要，一般用粗体显示\u003c\/li\u003e\n\u003cli\u003e\u0026lt;quote\u0026gt;\u003c!-- raw HTML omitted --\u003e\nquote标签用于设置引号的样式\u003c\/li\u003e\n\u003cli\u003e\u0026lt;aside\u0026gt;\u003c!-- raw HTML omitted --\u003e\naside标签表示一个和其余页面内容几乎无关的部分，被认为是独立于该内容的一部分并且可以被单独的拆分出来而不会使整体受影响,其通常表现为侧边栏或者标注框\u003c\/li\u003e\n\u003cli\u003e\u0026lt;footer\u0026gt;\u003c!-- raw HTML omitted --\u003e\nfooter标签表示最近一个章节内容或者根节点（sectioning root ）元素的页脚。一个页脚通常包含该章节作者、版权数据或者与文档相关的链接等信息\u003c\/li\u003e\n\u003c\/ul\u003e",
+  "url":"https:\/\/delta5738.github.io\/post\/html-markup-1\/",
+  "keywords":"[]"
+}
+
+</script>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.101.0 with theme Tranquilpeak 0.5.3-BETA">
+<meta name="author" content="LI MIN">
+<meta name="keywords" content="">
+<meta name="description" content="HTML入门笔记1
+date: 2022-06-28
+HTML发明者
+
+1980年，物理学家蒂姆·伯纳斯-李在欧洲核子研究中心（CERN）在承包工程期间，为使CERN的研究人员使用并共享文档，他提出并创建原型系统ENQUIRE。1989年，伯纳斯-李在一份备忘录中提出一个基于互联网的超文本系统[5]。他规定HTML并在1990年底写出浏览器和服务器软件。同年，伯纳斯-李与CERN的数据系统工程师罗伯特·卡里奥联合为项目申请资助，但未被CERN正式批准。在他的个人笔记中[6]伯纳斯-李列举“一些使用超文本的领域”，并把百科全书列为首位[7]。
+https://zh.m.wikipedia.org/zh/HTML
+
+HTML常用标签(1)
+
+&lt;!DOCTYPE&gt; 
+!DOCTYPE标签应该位于html文档最前,处于HTML标签之前,它来告知浏览器使用了哪种HTML版本
+&lt;html&gt;  
+html表示一个 HTML 文档的根（顶级元素），所以它也被称为根元素。所有其他元素必须是此元素的后代。
+&lt;head&gt; 
+head标签规定文档相关配置信息元数据（Metadata）,包括文档标题,引用的文档样式等
+&lt;meta&gt; 
+meta标签用来表示HTML元数据的属性,如name,字符集等
+&lt;title&gt;
+title标签定义文档的标题，显示在Browser的标题栏或标签页上。它只应该包含文本，若是包含有标签，则它包含的任何标签都将被忽略
+&lt;style&gt;
+style标签元素包含文档的样式信息或者文档的部分内容
+&lt;body&gt;
+body标签表示文档的内容
+&lt;header&gt;
+header标签用于展示介绍性内容，通常包含一组介绍性的或是辅助导航的实用元素。它可能包含一些标题元素，但也可能包含其他元素，比如 Logo、搜索框、作者名称等
+&lt;div&gt;
+div标签是一个内容容器,在不使用CSS的情况下，其对内容或布局没有任何影响
+&lt;main&gt;
+main标签呈现了文档的body或应用的主体部分。主体部分由与文档直接相关，或者扩展于文档的中心主题、应用的主要功能部分的内容组成
+&lt;section&gt;
+section标签表示一个包含在 HTML 文档中的独立部分，它没有更具体的语义元素来表示，一般来说会有包含一个标题
+&lt;h1-h6&gt;
+h1-h6标签 (Heading) 呈现了六个不同的级别的标题，h1 级别最高，而 h6级别最低
+&lt;p&gt;
+p标签表示文本的一个段落
+&lt;ul&gt;
+ul标签表示一个内可含多个元素的无序列表或项目符号列表
+&lt;li&gt;
+li标签用于表示列表里的条目。它必须包含在一个父元素里：一个有序列表 (ol)，一个无序列表 (ul)，或者一个菜单 (menu)。在菜单或者无序列表里，列表条目通常用点排列显示；在有序列表里，列表条目通常在左边显示按升序排列的计数
+&lt;dl&gt;
+dl标签是一个包含术语定义以及描述的列表
+&lt;pre&gt;
+pre标签表示预定义格式文本。在该元素中的文本通常按照原文件中的编排，以等宽字体的形式展现出来，文本中的空白符（比如空格和换行符）都会显示出来。(紧跟在pre开始标签后的换行符也会被省略)
+&lt;code&gt;
+code标签呈现一段计算机代码。默认情况下，它以浏览器的默认等宽字体显示
+&lt;em&gt;
+em标签标记出需要用户着重阅读的内容
+&lt;strong&gt;
+strong标签表示文本十分重要，一般用粗体显示
+&lt;quote&gt;
+quote标签用于设置引号的样式
+&lt;aside&gt;
+aside标签表示一个和其余页面内容几乎无关的部分，被认为是独立于该内容的一部分并且可以被单独的拆分出来而不会使整体受影响,其通常表现为侧边栏或者标注框
+&lt;footer&gt;
+footer标签表示最近一个章节内容或者根节点（sectioning root ）元素的页脚。一个页脚通常包含该章节作者、版权数据或者与文档相关的链接等信息
+">
+
+
+<meta property="og:description" content="HTML入门笔记1
+date: 2022-06-28
+HTML发明者
+
+1980年，物理学家蒂姆·伯纳斯-李在欧洲核子研究中心（CERN）在承包工程期间，为使CERN的研究人员使用并共享文档，他提出并创建原型系统ENQUIRE。1989年，伯纳斯-李在一份备忘录中提出一个基于互联网的超文本系统[5]。他规定HTML并在1990年底写出浏览器和服务器软件。同年，伯纳斯-李与CERN的数据系统工程师罗伯特·卡里奥联合为项目申请资助，但未被CERN正式批准。在他的个人笔记中[6]伯纳斯-李列举“一些使用超文本的领域”，并把百科全书列为首位[7]。
+https://zh.m.wikipedia.org/zh/HTML
+
+HTML常用标签(1)
+
+&lt;!DOCTYPE&gt; 
+!DOCTYPE标签应该位于html文档最前,处于HTML标签之前,它来告知浏览器使用了哪种HTML版本
+&lt;html&gt;  
+html表示一个 HTML 文档的根（顶级元素），所以它也被称为根元素。所有其他元素必须是此元素的后代。
+&lt;head&gt; 
+head标签规定文档相关配置信息元数据（Metadata）,包括文档标题,引用的文档样式等
+&lt;meta&gt; 
+meta标签用来表示HTML元数据的属性,如name,字符集等
+&lt;title&gt;
+title标签定义文档的标题，显示在Browser的标题栏或标签页上。它只应该包含文本，若是包含有标签，则它包含的任何标签都将被忽略
+&lt;style&gt;
+style标签元素包含文档的样式信息或者文档的部分内容
+&lt;body&gt;
+body标签表示文档的内容
+&lt;header&gt;
+header标签用于展示介绍性内容，通常包含一组介绍性的或是辅助导航的实用元素。它可能包含一些标题元素，但也可能包含其他元素，比如 Logo、搜索框、作者名称等
+&lt;div&gt;
+div标签是一个内容容器,在不使用CSS的情况下，其对内容或布局没有任何影响
+&lt;main&gt;
+main标签呈现了文档的body或应用的主体部分。主体部分由与文档直接相关，或者扩展于文档的中心主题、应用的主要功能部分的内容组成
+&lt;section&gt;
+section标签表示一个包含在 HTML 文档中的独立部分，它没有更具体的语义元素来表示，一般来说会有包含一个标题
+&lt;h1-h6&gt;
+h1-h6标签 (Heading) 呈现了六个不同的级别的标题，h1 级别最高，而 h6级别最低
+&lt;p&gt;
+p标签表示文本的一个段落
+&lt;ul&gt;
+ul标签表示一个内可含多个元素的无序列表或项目符号列表
+&lt;li&gt;
+li标签用于表示列表里的条目。它必须包含在一个父元素里：一个有序列表 (ol)，一个无序列表 (ul)，或者一个菜单 (menu)。在菜单或者无序列表里，列表条目通常用点排列显示；在有序列表里，列表条目通常在左边显示按升序排列的计数
+&lt;dl&gt;
+dl标签是一个包含术语定义以及描述的列表
+&lt;pre&gt;
+pre标签表示预定义格式文本。在该元素中的文本通常按照原文件中的编排，以等宽字体的形式展现出来，文本中的空白符（比如空格和换行符）都会显示出来。(紧跟在pre开始标签后的换行符也会被省略)
+&lt;code&gt;
+code标签呈现一段计算机代码。默认情况下，它以浏览器的默认等宽字体显示
+&lt;em&gt;
+em标签标记出需要用户着重阅读的内容
+&lt;strong&gt;
+strong标签表示文本十分重要，一般用粗体显示
+&lt;quote&gt;
+quote标签用于设置引号的样式
+&lt;aside&gt;
+aside标签表示一个和其余页面内容几乎无关的部分，被认为是独立于该内容的一部分并且可以被单独的拆分出来而不会使整体受影响,其通常表现为侧边栏或者标注框
+&lt;footer&gt;
+footer标签表示最近一个章节内容或者根节点（sectioning root ）元素的页脚。一个页脚通常包含该章节作者、版权数据或者与文档相关的链接等信息
+">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Html Markup 1">
+<meta name="twitter:title" content="Html Markup 1">
+<meta property="og:url" content="https://delta5738.github.io/post/html-markup-1/">
+<meta property="twitter:url" content="https://delta5738.github.io/post/html-markup-1/">
+<meta property="og:site_name" content="Hugo tranquilpeak theme">
+<meta property="og:description" content="HTML入门笔记1
+date: 2022-06-28
+HTML发明者
+
+1980年，物理学家蒂姆·伯纳斯-李在欧洲核子研究中心（CERN）在承包工程期间，为使CERN的研究人员使用并共享文档，他提出并创建原型系统ENQUIRE。1989年，伯纳斯-李在一份备忘录中提出一个基于互联网的超文本系统[5]。他规定HTML并在1990年底写出浏览器和服务器软件。同年，伯纳斯-李与CERN的数据系统工程师罗伯特·卡里奥联合为项目申请资助，但未被CERN正式批准。在他的个人笔记中[6]伯纳斯-李列举“一些使用超文本的领域”，并把百科全书列为首位[7]。
+https://zh.m.wikipedia.org/zh/HTML
+
+HTML常用标签(1)
+
+&lt;!DOCTYPE&gt; 
+!DOCTYPE标签应该位于html文档最前,处于HTML标签之前,它来告知浏览器使用了哪种HTML版本
+&lt;html&gt;  
+html表示一个 HTML 文档的根（顶级元素），所以它也被称为根元素。所有其他元素必须是此元素的后代。
+&lt;head&gt; 
+head标签规定文档相关配置信息元数据（Metadata）,包括文档标题,引用的文档样式等
+&lt;meta&gt; 
+meta标签用来表示HTML元数据的属性,如name,字符集等
+&lt;title&gt;
+title标签定义文档的标题，显示在Browser的标题栏或标签页上。它只应该包含文本，若是包含有标签，则它包含的任何标签都将被忽略
+&lt;style&gt;
+style标签元素包含文档的样式信息或者文档的部分内容
+&lt;body&gt;
+body标签表示文档的内容
+&lt;header&gt;
+header标签用于展示介绍性内容，通常包含一组介绍性的或是辅助导航的实用元素。它可能包含一些标题元素，但也可能包含其他元素，比如 Logo、搜索框、作者名称等
+&lt;div&gt;
+div标签是一个内容容器,在不使用CSS的情况下，其对内容或布局没有任何影响
+&lt;main&gt;
+main标签呈现了文档的body或应用的主体部分。主体部分由与文档直接相关，或者扩展于文档的中心主题、应用的主要功能部分的内容组成
+&lt;section&gt;
+section标签表示一个包含在 HTML 文档中的独立部分，它没有更具体的语义元素来表示，一般来说会有包含一个标题
+&lt;h1-h6&gt;
+h1-h6标签 (Heading) 呈现了六个不同的级别的标题，h1 级别最高，而 h6级别最低
+&lt;p&gt;
+p标签表示文本的一个段落
+&lt;ul&gt;
+ul标签表示一个内可含多个元素的无序列表或项目符号列表
+&lt;li&gt;
+li标签用于表示列表里的条目。它必须包含在一个父元素里：一个有序列表 (ol)，一个无序列表 (ul)，或者一个菜单 (menu)。在菜单或者无序列表里，列表条目通常用点排列显示；在有序列表里，列表条目通常在左边显示按升序排列的计数
+&lt;dl&gt;
+dl标签是一个包含术语定义以及描述的列表
+&lt;pre&gt;
+pre标签表示预定义格式文本。在该元素中的文本通常按照原文件中的编排，以等宽字体的形式展现出来，文本中的空白符（比如空格和换行符）都会显示出来。(紧跟在pre开始标签后的换行符也会被省略)
+&lt;code&gt;
+code标签呈现一段计算机代码。默认情况下，它以浏览器的默认等宽字体显示
+&lt;em&gt;
+em标签标记出需要用户着重阅读的内容
+&lt;strong&gt;
+strong标签表示文本十分重要，一般用粗体显示
+&lt;quote&gt;
+quote标签用于设置引号的样式
+&lt;aside&gt;
+aside标签表示一个和其余页面内容几乎无关的部分，被认为是独立于该内容的一部分并且可以被单独的拆分出来而不会使整体受影响,其通常表现为侧边栏或者标注框
+&lt;footer&gt;
+footer标签表示最近一个章节内容或者根节点（sectioning root ）元素的页脚。一个页脚通常包含该章节作者、版权数据或者与文档相关的链接等信息
+">
+<meta name="twitter:description" content="HTML入门笔记1
+date: 2022-06-28
+HTML发明者
+
+1980年，物理学家蒂姆·伯纳斯-李在欧洲核子研究中心（CERN）在承包工程期间，为使CERN的研究人员使用并共享文档，他提出并创建原型系统ENQUIRE。1989年，伯纳斯-李在一份备忘录中提出一个基于互联网的超文本系统[5]。他规定HTML并在1990年底写出浏览器和服务器软件。同年，伯纳斯-李与CERN的数据系统工程师罗伯特·卡里奥联合为项目申请资助，但未被CERN正式批准。在他的个人笔记中[6]伯纳斯-李列举“一些使用超文本的领域”，并把百科全书列为首位[7]。
+https://zh.m.wikipedia.org/zh/HTML
+
+HTML常用标签(1)
+
+&lt;!DOCTYPE&gt; 
+!DOCTYPE标签应该位于html文档最前,处于HTML标签之前,它来告知浏览器使用了哪种HTML版本
+&lt;html&gt;  
+html表示一个 HTML 文档的根（顶级元素），所以它也被称为根元素。所有其他元素必须是此元素的后代。
+&lt;head&gt; 
+head标签规定文档相关配置信息元数据（Metadata）,包括文档标题,引用的文档样式等
+&lt;meta&gt; 
+meta标签用来表示HTML元数据的属性,如name,字符集等
+&lt;title&gt;
+title标签定义文档的标题，显示在Browser的标题栏或标签页上。它只应该包含文本，若是包含有标签，则它包含的任何标签都将被忽略
+&lt;style&gt;
+style标签元素包含文档的样式信息或者文档的部分内容
+&lt;body&gt;
+body标签表示文档的内容
+&lt;header&gt;
+header标签用于展示介绍性内容，通常包含一组介绍性的或是辅助导航的实用元素。它可能包含一些标题元素，但也可能包含其他元素，比如 Logo、搜索框、作者名称等
+&lt;div&gt;
+div标签是一个内容容器,在不使用CSS的情况下，其对内容或布局没有任何影响
+&lt;main&gt;
+main标签呈现了文档的body或应用的主体部分。主体部分由与文档直接相关，或者扩展于文档的中心主题、应用的主要功能部分的内容组成
+&lt;section&gt;
+section标签表示一个包含在 HTML 文档中的独立部分，它没有更具体的语义元素来表示，一般来说会有包含一个标题
+&lt;h1-h6&gt;
+h1-h6标签 (Heading) 呈现了六个不同的级别的标题，h1 级别最高，而 h6级别最低
+&lt;p&gt;
+p标签表示文本的一个段落
+&lt;ul&gt;
+ul标签表示一个内可含多个元素的无序列表或项目符号列表
+&lt;li&gt;
+li标签用于表示列表里的条目。它必须包含在一个父元素里：一个有序列表 (ol)，一个无序列表 (ul)，或者一个菜单 (menu)。在菜单或者无序列表里，列表条目通常用点排列显示；在有序列表里，列表条目通常在左边显示按升序排列的计数
+&lt;dl&gt;
+dl标签是一个包含术语定义以及描述的列表
+&lt;pre&gt;
+pre标签表示预定义格式文本。在该元素中的文本通常按照原文件中的编排，以等宽字体的形式展现出来，文本中的空白符（比如空格和换行符）都会显示出来。(紧跟在pre开始标签后的换行符也会被省略)
+&lt;code&gt;
+code标签呈现一段计算机代码。默认情况下，它以浏览器的默认等宽字体显示
+&lt;em&gt;
+em标签标记出需要用户着重阅读的内容
+&lt;strong&gt;
+strong标签表示文本十分重要，一般用粗体显示
+&lt;quote&gt;
+quote标签用于设置引号的样式
+&lt;aside&gt;
+aside标签表示一个和其余页面内容几乎无关的部分，被认为是独立于该内容的一部分并且可以被单独的拆分出来而不会使整体受影响,其通常表现为侧边栏或者标注框
+&lt;footer&gt;
+footer标签表示最近一个章节内容或者根节点（sectioning root ）元素的页脚。一个页脚通常包含该章节作者、版权数据或者与文档相关的链接等信息
+">
+<meta property="og:locale" content="zh-cn">
+
+  
+    <meta property="article:published_time" content="2022-07-04T01:03:39">
+  
+  
+    <meta property="article:modified_time" content="2022-07-04T01:03:39">
+  
+  
+  
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c?s=640">
+  <meta property="twitter:image" content="https://www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c?s=640">
+
+
+
+
+
+
+    <title>Html Markup 1</title>
+
+    <link rel="icon" href="https://delta5738.github.io/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://delta5738.github.io/post/html-markup-1/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    
+    <link rel="stylesheet" href="https://delta5738.github.io/css/style-h6ccsoet3mzkbb0wngshlfbaweimexgqcxj0h5hu4h82olsdzz6wmqdkajm.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://delta5738.github.io/" aria-label="去首页">Hugo tranquilpeak theme</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://delta5738.github.io/#about" aria-label="打开链接: /#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c?s=90" alt="作者的图片" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://delta5738.github.io/#about" aria-label="阅读有关作者的更多信息">
+          <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c?s=110" alt="作者的图片" />
+        </a>
+        <h4 class="sidebar-profile-name">LI MIN</h4>
+        
+          <h5 class="sidebar-profile-bio">Super bio with markdown support <strong>COOL</strong></h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://delta5738.github.io/" title="Home">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-home" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">首页</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://delta5738.github.io/categories" title="Categories">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-bookmark" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">分类</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://delta5738.github.io/tags" title="Tags">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-tags" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">标签</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://delta5738.github.io/archives" title="Archives">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-archive" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">归档</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://delta5738.github.io/#about" title="About">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-question" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">关于</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/kakawait" target="_blank" rel="noopener" title="GitHub">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-github" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://stackoverflow.com/users/636472/kakawait" target="_blank" rel="noopener" title="Stack Overflow">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-stack-overflow" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Stack Overflow</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://delta5738.github.io/index.xml" title="RSS">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-rss" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" id="top">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title">
+      Html Markup 1
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time datetime="2022-07-04T01:03:39&#43;09:00">
+        
+  七月 4, 2022
+
+      </time>
+    
+    
+  </div>
+
+</div>
+          
+          <div class="post-content markdown">
+            <div class="main-content-wrap">
+              <h1 id="html入门笔记1">HTML入门笔记1</h1>
+<p>date: 2022-06-28</p>
+<h2 id="html发明者">HTML发明者</h2>
+<ul>
+<li>1980年，物理学家蒂姆·伯纳斯-李在欧洲核子研究中心（CERN）在承包工程期间，为使CERN的研究人员使用并共享文档，他提出并创建原型系统ENQUIRE。1989年，伯纳斯-李在一份备忘录中提出一个基于互联网的超文本系统[5]。他规定HTML并在1990年底写出浏览器和服务器软件。同年，伯纳斯-李与CERN的数据系统工程师罗伯特·卡里奥联合为项目申请资助，但未被CERN正式批准。在他的个人笔记中[6]伯纳斯-李列举“一些使用超文本的领域”，并把百科全书列为首位[7]。</li>
+<li><a href="https://zh.m.wikipedia.org/zh/HTML">https://zh.m.wikipedia.org/zh/HTML</a></li>
+</ul>
+<h2 id="html常用标签1">HTML常用标签(1)</h2>
+<ul>
+<li><!-- raw HTML omitted -->&lt;!DOCTYPE&gt; <!-- raw HTML omitted --><!-- raw HTML omitted -->
+<!-- raw HTML omitted -->!DOCTYPE标签应该位于html文档最前,处于HTML标签之前,它来告知浏览器使用了哪种HTML版本<!-- raw HTML omitted --></li>
+<li>&lt;html&gt;  <!-- raw HTML omitted -->
+html表示一个 HTML 文档的根（顶级元素），所以它也被称为根元素。所有其他元素必须是此元素的后代。</li>
+<li>&lt;head&gt; <!-- raw HTML omitted -->
+head标签规定文档相关配置信息元数据（Metadata）,包括文档标题,引用的文档样式等</li>
+<li>&lt;meta&gt; <!-- raw HTML omitted -->
+meta标签用来表示HTML元数据的属性,如name,字符集等</li>
+<li>&lt;title&gt;<!-- raw HTML omitted -->
+title标签定义文档的标题，显示在Browser的标题栏或标签页上。它只应该包含文本，若是包含有标签，则它包含的任何标签都将被忽略</li>
+<li>&lt;style&gt;<!-- raw HTML omitted -->
+style标签元素包含文档的样式信息或者文档的部分内容</li>
+<li>&lt;body&gt;<!-- raw HTML omitted -->
+body标签表示文档的内容</li>
+<li>&lt;header&gt;<!-- raw HTML omitted -->
+header标签用于展示介绍性内容，通常包含一组介绍性的或是辅助导航的实用元素。它可能包含一些标题元素，但也可能包含其他元素，比如 Logo、搜索框、作者名称等</li>
+<li>&lt;div&gt;<!-- raw HTML omitted -->
+div标签是一个内容容器,在不使用CSS的情况下，其对内容或布局没有任何影响</li>
+<li>&lt;main&gt;<!-- raw HTML omitted -->
+main标签呈现了文档的body或应用的主体部分。主体部分由与文档直接相关，或者扩展于文档的中心主题、应用的主要功能部分的内容组成</li>
+<li>&lt;section&gt;<!-- raw HTML omitted -->
+section标签表示一个包含在 HTML 文档中的独立部分，它没有更具体的语义元素来表示，一般来说会有包含一个标题</li>
+<li>&lt;h1-h6&gt;<!-- raw HTML omitted -->
+h1-h6标签 (Heading) 呈现了六个不同的级别的标题，h1 级别最高，而 h6级别最低</li>
+<li>&lt;p&gt;<!-- raw HTML omitted -->
+p标签表示文本的一个段落</li>
+<li>&lt;ul&gt;<!-- raw HTML omitted -->
+ul标签表示一个内可含多个元素的无序列表或项目符号列表</li>
+<li>&lt;li&gt;<!-- raw HTML omitted -->
+li标签用于表示列表里的条目。它必须包含在一个父元素里：一个有序列表 (ol)，一个无序列表 (ul)，或者一个菜单 (menu)。在菜单或者无序列表里，列表条目通常用点排列显示；在有序列表里，列表条目通常在左边显示按升序排列的计数</li>
+<li>&lt;dl&gt;<!-- raw HTML omitted -->
+dl标签是一个包含术语定义以及描述的列表</li>
+<li>&lt;pre&gt;<!-- raw HTML omitted -->
+pre标签表示预定义格式文本。在该元素中的文本通常按照原文件中的编排，以等宽字体的形式展现出来，文本中的空白符（比如空格和换行符）都会显示出来。(紧跟在pre开始标签后的换行符也会被省略)</li>
+<li>&lt;code&gt;<!-- raw HTML omitted -->
+code标签呈现一段计算机代码。默认情况下，它以浏览器的默认等宽字体显示</li>
+<li>&lt;em&gt;<!-- raw HTML omitted -->
+em标签标记出需要用户着重阅读的内容</li>
+<li>&lt;strong&gt;<!-- raw HTML omitted -->
+strong标签表示文本十分重要，一般用粗体显示</li>
+<li>&lt;quote&gt;<!-- raw HTML omitted -->
+quote标签用于设置引号的样式</li>
+<li>&lt;aside&gt;<!-- raw HTML omitted -->
+aside标签表示一个和其余页面内容几乎无关的部分，被认为是独立于该内容的一部分并且可以被单独的拆分出来而不会使整体受影响,其通常表现为侧边栏或者标注框</li>
+<li>&lt;footer&gt;<!-- raw HTML omitted -->
+footer标签表示最近一个章节内容或者根节点（sectioning root ）元素的页脚。一个页脚通常包含该章节作者、版权数据或者与文档相关的链接等信息</li>
+</ul>
+              
+
+
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+            
+            
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://delta5738.github.io/post/html-markup-2/" data-tooltip="Html Markup 2" aria-label="下一篇: Html Markup 2">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--disabled">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="分享这个帖子">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://delta5738.github.io/post/html-markup-1/" title="分享到 Facebook" aria-label="分享到 Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://delta5738.github.io/post/html-markup-1/" title="分享到 Twitter" aria-label="分享到 Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://delta5738.github.io/post/html-markup-1/" title="分享到 Linkedin" aria-label="分享到 Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+    <li class="post-action">
+      <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="发表评论">
+        <i class="far fa-comment"></i>
+      </a>
+    </li>
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="回到顶部">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+            
+  
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+    <script type="text/javascript">
+      var disqus_config = function() {
+        this.page.url = 'https:\/\/delta5738.github.io\/post\/html-markup-1\/';
+        
+          this.page.identifier = '\/post\/html-markup-1\/'
+        
+      };
+      (function() {
+        
+        
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+          document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+          return;
+        }
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = 'hugo-tranquilpeak-theme';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+  
+
+
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2022 LI MIN. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://delta5738.github.io/post/html-markup-2/" data-tooltip="Html Markup 2" aria-label="下一篇: Html Markup 2">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--disabled">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="分享这个帖子">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://delta5738.github.io/post/html-markup-1/" title="分享到 Facebook" aria-label="分享到 Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://delta5738.github.io/post/html-markup-1/" title="分享到 Twitter" aria-label="分享到 Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://delta5738.github.io/post/html-markup-1/" title="分享到 Linkedin" aria-label="分享到 Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+    <li class="post-action">
+      <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="发表评论">
+        <i class="far fa-comment"></i>
+      </a>
+    </li>
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="回到顶部">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+      </div>
+      
+<div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-times"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdelta5738.github.io%2Fpost%2Fhtml-markup-1%2F" aria-label="分享到 Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i><span>分享到 Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fdelta5738.github.io%2Fpost%2Fhtml-markup-1%2F" aria-label="分享到 Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i><span>分享到 Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fdelta5738.github.io%2Fpost%2Fhtml-markup-1%2F" aria-label="分享到 Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i><span>分享到 Linkedin</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+
+
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-times"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c?s=110" alt="作者的图片" />
+    
+    <h4 id="about-card-name">LI MIN</h4>
+    
+      <div id="about-card-bio">Super bio with markdown support <strong>COOL</strong></div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Your job title
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker-alt"></i>
+        <br/>
+        France
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://delta5738.github.io/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js" integrity="sha512-z+/WWfyD5tccCukM4VvONpEtLmbAm5LDu7eKiyMQJ9m7OfPEDL7gENyDRL3Yfe8XAuGsS2fS4xSMnl6d30kqGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="https://delta5738.github.io/js/script-yqzy9wdlzix4lbbwdnzvwx3egsne77earqmn73v9uno8aupuph8wfguccut.min.js"></script>
+
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-gE8KAQyFIzV1C9+GZ8TKJHZS2s+n7EjNtC+IMRn1l5+WYJTHOODUM6JSjZhFhqXmc7bG8Av6XXpckA4tYhflnw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/apache.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-EWROca+bote+7Oaaar1F6y74iZj1r1F9rm/ly7o+/FwJopbBaWtsFDmaKoZDd3QiGU2pGacBirHJNivmGLYrow==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/go.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-GDVzAn0wpx1yVtQsRWmFc6PhJiLBPdUic+h4GWgljBh904O3JU10fk9EKNpVyIoPqkFn54rgL2QBG4BmUTMpiQ==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/http.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-UgZlma8NzkrDb/NWgmLIcTrH7i/CSnLLDRFqCSNF5NGPpjKmzyM25qcoXGOup8+cDakKyaiTDd7N4dyH4YT+IA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/less.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-lot9koe73sfXIrUvIPM/UEhuMciN56RPyBdOyZgfO53P2lkWyyXN7J+njcxIIBRV+nVDQeiWtiXg+bLAJZDTfg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/nginx.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-Zd3e7XxHP00TD0Imr0PIfeM0fl0v95kMWuhyAS3Wn1UTSXTkz0OhtRgBAr4JlmADRgiXr4x7lpeUdqaGN8xIog==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/puppet.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-qtqDO052iXMSP+5d/aE/jMtL9vIIGvONgTJziC2K/ZIB1yEGa55WVxGE9/08rSQ62EoDifS9SWVGZ7ihSLhzMA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/scss.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-1NmkjnEDnwwwcu28KoQF8vs3oaPFokQHbmbtwGhFfeDsQZtVFI8zW2aE9O8yMYdpdyKV/5blE4pSWw4Z/Sv97w==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/stylus.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-B2wSfruPjr8EJL6IIzQr1eAuDwrsfIfccNf/LCEdxELCgC/S/ZMt/Uvk80aD79m7IqOqW+Sw8nbkvha20yZpzg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/swift.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-28oDiQZGKUVN6wQ7PSLPNipOcmkCALXKwOi7bnkyFf8QiMZQxG9EQoy/iiNx6Zxj2cG2SbVa4dXKigQhu7GiFw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/yaml.min.js"></script>
+  
+
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      CommonHTML: { linebreaks: { automatic: true } },
+      tex2jax: { inlineMath: [ ['$', '$'], ['\\(','\\)'] ], displayMath: [ ['$$','$$'], ['\\[', '\\]'] ], processEscapes: false },
+      messageStyle: 'none'
+    });
+  </script>
+
+
+
+    
+  </body>
+</html>
+
