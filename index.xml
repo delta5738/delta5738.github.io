@@ -6,16 +6,85 @@
     <description>Recent content on Hugo tranquilpeak theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Jul 2022 01:04:12 +0900</lastBuildDate><atom:link href="https://delta5738.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 15 Jul 2022 01:03:39 +0900</lastBuildDate><atom:link href="https://delta5738.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Html Markup 2</title>
+      <title>CSS盒模型</title>
+      <link>https://delta5738.github.io/post/css_boxmodel01/</link>
+      <pubDate>Fri, 15 Jul 2022 01:03:39 +0900</pubDate>
+      
+      <guid>https://delta5738.github.io/post/css_boxmodel01/</guid>
+      <description>CSS盒模型基本概念 当对一个文档进行布局的时候，浏览器的渲染引擎会根据标准之一的 CSS 基础框盒模型 所有元素表示为一个个矩形的盒子（box）。CSS 决定这些盒子的大小、位置以及属性（例如颜色、背景、边框尺寸…） 每个盒子由四个部分组成，内容边界 Content edge、内边距边界 Padding Edge、边框边界 Border Edge、外边框边界 Margin Edge 盒模型包括两种1:border-box;2:content-box border-box宽度包含整个border,padding,content,margin,border是整个BOX的边界(好用一些) content-box宽度只包括整个content,content是整个BOX的边界 没有指定padding或者宽度,则两者差别不大 display:inline_block可以取消margin合并 CSS是不正交的,属性之间会互相影响 第一个子元素和最后一个子元素,上下会和父元素外边距合并 overflow 溢出 内容宽度或者高度大于容器的,会溢出 可用overflow设置是否显示滚动条 auto是灵活设置 scroll是永远显示 hidden是隐藏溢出部分 visible是显示溢出部分 overflow可以分为overflow-x和overflow-y margin合并 父子margin合并 兄弟margin合并 如何阻止合并 父子合并用padding/border挡住 父子合并用overflow:hidden挡住 父子合并用display:flex挡住 兄弟合并是符合预期的 兄弟合并可以用inline-block消除 </description>
+    </item>
+    
+    <item>
+      <title>HTML入门笔记1</title>
+      <link>https://delta5738.github.io/post/html-markup-1/</link>
+      <pubDate>Mon, 04 Jul 2022 01:03:39 +0900</pubDate>
+      
+      <guid>https://delta5738.github.io/post/html-markup-1/</guid>
+      <description>&lt;h2 id=&#34;html发明者&#34;&gt;HTML发明者&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;1980年，物理学家蒂姆·伯纳斯-李在欧洲核子研究中心（CERN）在承包工程期间，为使CERN的研究人员使用并共享文档，他提出并创建原型系统ENQUIRE。1989年，伯纳斯-李在一份备忘录中提出一个基于互联网的超文本系统[5]。他规定HTML并在1990年底写出浏览器和服务器软件。同年，伯纳斯-李与CERN的数据系统工程师罗伯特·卡里奥联合为项目申请资助，但未被CERN正式批准。在他的个人笔记中[6]伯纳斯-李列举“一些使用超文本的领域”，并把百科全书列为首位[7]。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zh.m.wikipedia.org/zh/HTML&#34;&gt;https://zh.m.wikipedia.org/zh/HTML&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;html常用标签1&#34;&gt;HTML常用标签(1)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;!-- raw HTML omitted --&gt;&amp;lt;!DOCTYPE&amp;gt; &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;!DOCTYPE标签应该位于html文档最前,处于HTML标签之前,它来告知浏览器使用了哪种HTML版本&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;li&gt;&amp;lt;html&amp;gt;  &lt;!-- raw HTML omitted --&gt;
+html表示一个 HTML 文档的根（顶级元素），所以它也被称为根元素。所有其他元素必须是此元素的后代。&lt;/li&gt;
+&lt;li&gt;&amp;lt;head&amp;gt; &lt;!-- raw HTML omitted --&gt;
+head标签规定文档相关配置信息元数据（Metadata）,包括文档标题,引用的文档样式等&lt;/li&gt;
+&lt;li&gt;&amp;lt;meta&amp;gt; &lt;!-- raw HTML omitted --&gt;
+meta标签用来表示HTML元数据的属性,如name,字符集等&lt;/li&gt;
+&lt;li&gt;&amp;lt;title&amp;gt;&lt;!-- raw HTML omitted --&gt;
+title标签定义文档的标题，显示在Browser的标题栏或标签页上。它只应该包含文本，若是包含有标签，则它包含的任何标签都将被忽略&lt;/li&gt;
+&lt;li&gt;&amp;lt;style&amp;gt;&lt;!-- raw HTML omitted --&gt;
+style标签元素包含文档的样式信息或者文档的部分内容&lt;/li&gt;
+&lt;li&gt;&amp;lt;body&amp;gt;&lt;!-- raw HTML omitted --&gt;
+body标签表示文档的内容&lt;/li&gt;
+&lt;li&gt;&amp;lt;header&amp;gt;&lt;!-- raw HTML omitted --&gt;
+header标签用于展示介绍性内容，通常包含一组介绍性的或是辅助导航的实用元素。它可能包含一些标题元素，但也可能包含其他元素，比如 Logo、搜索框、作者名称等&lt;/li&gt;
+&lt;li&gt;&amp;lt;div&amp;gt;&lt;!-- raw HTML omitted --&gt;
+div标签是一个内容容器,在不使用CSS的情况下，其对内容或布局没有任何影响&lt;/li&gt;
+&lt;li&gt;&amp;lt;main&amp;gt;&lt;!-- raw HTML omitted --&gt;
+main标签呈现了文档的body或应用的主体部分。主体部分由与文档直接相关，或者扩展于文档的中心主题、应用的主要功能部分的内容组成&lt;/li&gt;
+&lt;li&gt;&amp;lt;section&amp;gt;&lt;!-- raw HTML omitted --&gt;
+section标签表示一个包含在 HTML 文档中的独立部分，它没有更具体的语义元素来表示，一般来说会有包含一个标题&lt;/li&gt;
+&lt;li&gt;&amp;lt;h1-h6&amp;gt;&lt;!-- raw HTML omitted --&gt;
+h1-h6标签 (Heading) 呈现了六个不同的级别的标题，h1 级别最高，而 h6级别最低&lt;/li&gt;
+&lt;li&gt;&amp;lt;p&amp;gt;&lt;!-- raw HTML omitted --&gt;
+p标签表示文本的一个段落&lt;/li&gt;
+&lt;li&gt;&amp;lt;ul&amp;gt;&lt;!-- raw HTML omitted --&gt;
+ul标签表示一个内可含多个元素的无序列表或项目符号列表&lt;/li&gt;
+&lt;li&gt;&amp;lt;li&amp;gt;&lt;!-- raw HTML omitted --&gt;
+li标签用于表示列表里的条目。它必须包含在一个父元素里：一个有序列表 (ol)，一个无序列表 (ul)，或者一个菜单 (menu)。在菜单或者无序列表里，列表条目通常用点排列显示；在有序列表里，列表条目通常在左边显示按升序排列的计数&lt;/li&gt;
+&lt;li&gt;&amp;lt;dl&amp;gt;&lt;!-- raw HTML omitted --&gt;
+dl标签是一个包含术语定义以及描述的列表&lt;/li&gt;
+&lt;li&gt;&amp;lt;pre&amp;gt;&lt;!-- raw HTML omitted --&gt;
+pre标签表示预定义格式文本。在该元素中的文本通常按照原文件中的编排，以等宽字体的形式展现出来，文本中的空白符（比如空格和换行符）都会显示出来。(紧跟在pre开始标签后的换行符也会被省略)&lt;/li&gt;
+&lt;li&gt;&amp;lt;code&amp;gt;&lt;!-- raw HTML omitted --&gt;
+code标签呈现一段计算机代码。默认情况下，它以浏览器的默认等宽字体显示&lt;/li&gt;
+&lt;li&gt;&amp;lt;em&amp;gt;&lt;!-- raw HTML omitted --&gt;
+em标签标记出需要用户着重阅读的内容&lt;/li&gt;
+&lt;li&gt;&amp;lt;strong&amp;gt;&lt;!-- raw HTML omitted --&gt;
+strong标签表示文本十分重要，一般用粗体显示&lt;/li&gt;
+&lt;li&gt;&amp;lt;quote&amp;gt;&lt;!-- raw HTML omitted --&gt;
+quote标签用于设置引号的样式&lt;/li&gt;
+&lt;li&gt;&amp;lt;aside&amp;gt;&lt;!-- raw HTML omitted --&gt;
+aside标签表示一个和其余页面内容几乎无关的部分，被认为是独立于该内容的一部分并且可以被单独的拆分出来而不会使整体受影响,其通常表现为侧边栏或者标注框&lt;/li&gt;
+&lt;li&gt;&amp;lt;footer&amp;gt;&lt;!-- raw HTML omitted --&gt;
+footer标签表示最近一个章节内容或者根节点（sectioning root ）元素的页脚。一个页脚通常包含该章节作者、版权数据或者与文档相关的链接等信息&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>HTML标签学习2</title>
       <link>https://delta5738.github.io/post/html-markup-2/</link>
-      <pubDate>Mon, 04 Jul 2022 01:04:12 +0900</pubDate>
+      <pubDate>Sat, 02 Jul 2022 01:04:12 +0900</pubDate>
       
       <guid>https://delta5738.github.io/post/html-markup-2/</guid>
-      <description>&lt;h1 id=&#34;html标签学习2&#34;&gt;HTML标签学习2&lt;/h1&gt;
-&lt;p&gt;date: 2022-07-2&lt;/p&gt;
-&lt;h2 id=&#34;难点1&#34;&gt;难点1&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;难点1&#34;&gt;难点1&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&amp;lt;a&amp;gt; href&lt;!-- raw HTML omitted --&gt;
 a标签可以通过它的 href 属性创建通向其他网页、文件、同一页面内的位置、电子邮件地址或任何其他 URL 的超链接;&lt;!-- raw HTML omitted --&gt;
@@ -85,70 +154,6 @@ button标签表示一个可点击的按钮，可以用在表单或文档其它�
 &lt;li&gt;onchange用户输入改变的时候触发的事件;onfocus事件是用户鼠标集中到身上的时候触发的事件;onblur是用户鼠标出来的时候触发的事件&lt;/li&gt;
 &lt;li&gt;HTML5有自带验证器&lt;/li&gt;
 &lt;li&gt;注意:1.一般不监听input的click事件;2.input都要有name属性;3.&lt;!-- raw HTML omitted --&gt;一个表单必须含有type=&amp;ldquo;submit&amp;quot;表单才可以提交;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
-    </item>
-    
-    <item>
-      <title>Html Markup 1</title>
-      <link>https://delta5738.github.io/post/html-markup-1/</link>
-      <pubDate>Mon, 04 Jul 2022 01:03:39 +0900</pubDate>
-      
-      <guid>https://delta5738.github.io/post/html-markup-1/</guid>
-      <description>&lt;h1 id=&#34;html入门笔记1&#34;&gt;HTML入门笔记1&lt;/h1&gt;
-&lt;p&gt;date: 2022-06-28&lt;/p&gt;
-&lt;h2 id=&#34;html发明者&#34;&gt;HTML发明者&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;1980年，物理学家蒂姆·伯纳斯-李在欧洲核子研究中心（CERN）在承包工程期间，为使CERN的研究人员使用并共享文档，他提出并创建原型系统ENQUIRE。1989年，伯纳斯-李在一份备忘录中提出一个基于互联网的超文本系统[5]。他规定HTML并在1990年底写出浏览器和服务器软件。同年，伯纳斯-李与CERN的数据系统工程师罗伯特·卡里奥联合为项目申请资助，但未被CERN正式批准。在他的个人笔记中[6]伯纳斯-李列举“一些使用超文本的领域”，并把百科全书列为首位[7]。&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://zh.m.wikipedia.org/zh/HTML&#34;&gt;https://zh.m.wikipedia.org/zh/HTML&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;html常用标签1&#34;&gt;HTML常用标签(1)&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;!-- raw HTML omitted --&gt;&amp;lt;!DOCTYPE&amp;gt; &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;!DOCTYPE标签应该位于html文档最前,处于HTML标签之前,它来告知浏览器使用了哪种HTML版本&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
-&lt;li&gt;&amp;lt;html&amp;gt;  &lt;!-- raw HTML omitted --&gt;
-html表示一个 HTML 文档的根（顶级元素），所以它也被称为根元素。所有其他元素必须是此元素的后代。&lt;/li&gt;
-&lt;li&gt;&amp;lt;head&amp;gt; &lt;!-- raw HTML omitted --&gt;
-head标签规定文档相关配置信息元数据（Metadata）,包括文档标题,引用的文档样式等&lt;/li&gt;
-&lt;li&gt;&amp;lt;meta&amp;gt; &lt;!-- raw HTML omitted --&gt;
-meta标签用来表示HTML元数据的属性,如name,字符集等&lt;/li&gt;
-&lt;li&gt;&amp;lt;title&amp;gt;&lt;!-- raw HTML omitted --&gt;
-title标签定义文档的标题，显示在Browser的标题栏或标签页上。它只应该包含文本，若是包含有标签，则它包含的任何标签都将被忽略&lt;/li&gt;
-&lt;li&gt;&amp;lt;style&amp;gt;&lt;!-- raw HTML omitted --&gt;
-style标签元素包含文档的样式信息或者文档的部分内容&lt;/li&gt;
-&lt;li&gt;&amp;lt;body&amp;gt;&lt;!-- raw HTML omitted --&gt;
-body标签表示文档的内容&lt;/li&gt;
-&lt;li&gt;&amp;lt;header&amp;gt;&lt;!-- raw HTML omitted --&gt;
-header标签用于展示介绍性内容，通常包含一组介绍性的或是辅助导航的实用元素。它可能包含一些标题元素，但也可能包含其他元素，比如 Logo、搜索框、作者名称等&lt;/li&gt;
-&lt;li&gt;&amp;lt;div&amp;gt;&lt;!-- raw HTML omitted --&gt;
-div标签是一个内容容器,在不使用CSS的情况下，其对内容或布局没有任何影响&lt;/li&gt;
-&lt;li&gt;&amp;lt;main&amp;gt;&lt;!-- raw HTML omitted --&gt;
-main标签呈现了文档的body或应用的主体部分。主体部分由与文档直接相关，或者扩展于文档的中心主题、应用的主要功能部分的内容组成&lt;/li&gt;
-&lt;li&gt;&amp;lt;section&amp;gt;&lt;!-- raw HTML omitted --&gt;
-section标签表示一个包含在 HTML 文档中的独立部分，它没有更具体的语义元素来表示，一般来说会有包含一个标题&lt;/li&gt;
-&lt;li&gt;&amp;lt;h1-h6&amp;gt;&lt;!-- raw HTML omitted --&gt;
-h1-h6标签 (Heading) 呈现了六个不同的级别的标题，h1 级别最高，而 h6级别最低&lt;/li&gt;
-&lt;li&gt;&amp;lt;p&amp;gt;&lt;!-- raw HTML omitted --&gt;
-p标签表示文本的一个段落&lt;/li&gt;
-&lt;li&gt;&amp;lt;ul&amp;gt;&lt;!-- raw HTML omitted --&gt;
-ul标签表示一个内可含多个元素的无序列表或项目符号列表&lt;/li&gt;
-&lt;li&gt;&amp;lt;li&amp;gt;&lt;!-- raw HTML omitted --&gt;
-li标签用于表示列表里的条目。它必须包含在一个父元素里：一个有序列表 (ol)，一个无序列表 (ul)，或者一个菜单 (menu)。在菜单或者无序列表里，列表条目通常用点排列显示；在有序列表里，列表条目通常在左边显示按升序排列的计数&lt;/li&gt;
-&lt;li&gt;&amp;lt;dl&amp;gt;&lt;!-- raw HTML omitted --&gt;
-dl标签是一个包含术语定义以及描述的列表&lt;/li&gt;
-&lt;li&gt;&amp;lt;pre&amp;gt;&lt;!-- raw HTML omitted --&gt;
-pre标签表示预定义格式文本。在该元素中的文本通常按照原文件中的编排，以等宽字体的形式展现出来，文本中的空白符（比如空格和换行符）都会显示出来。(紧跟在pre开始标签后的换行符也会被省略)&lt;/li&gt;
-&lt;li&gt;&amp;lt;code&amp;gt;&lt;!-- raw HTML omitted --&gt;
-code标签呈现一段计算机代码。默认情况下，它以浏览器的默认等宽字体显示&lt;/li&gt;
-&lt;li&gt;&amp;lt;em&amp;gt;&lt;!-- raw HTML omitted --&gt;
-em标签标记出需要用户着重阅读的内容&lt;/li&gt;
-&lt;li&gt;&amp;lt;strong&amp;gt;&lt;!-- raw HTML omitted --&gt;
-strong标签表示文本十分重要，一般用粗体显示&lt;/li&gt;
-&lt;li&gt;&amp;lt;quote&amp;gt;&lt;!-- raw HTML omitted --&gt;
-quote标签用于设置引号的样式&lt;/li&gt;
-&lt;li&gt;&amp;lt;aside&amp;gt;&lt;!-- raw HTML omitted --&gt;
-aside标签表示一个和其余页面内容几乎无关的部分，被认为是独立于该内容的一部分并且可以被单独的拆分出来而不会使整体受影响,其通常表现为侧边栏或者标注框&lt;/li&gt;
-&lt;li&gt;&amp;lt;footer&amp;gt;&lt;!-- raw HTML omitted --&gt;
-footer标签表示最近一个章节内容或者根节点（sectioning root ）元素的页脚。一个页脚通常包含该章节作者、版权数据或者与文档相关的链接等信息&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     
