@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <script type="application/ld+json">
+
+{  
+  "@context":"http://schema.org",
+  "@type":"Website",
+  "@id":"https:\/\/delta5738.github.io",
+  "author": {
+    "@type": "Person",
+    "name": "LI MIN",
+    
+    "image": "https://www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c"
+    
+  },
+  "name":"Hugo tranquilpeak theme",
+  "description":"JS的表达式和语句 JavaScript 中表达式和语句的主要区别在于一条语句执行一个动作，一个表达式产生一个值。 一个表达式执行后一定会生成一个值，而语句不一定会产生值。 语句主要是用来执行动作，程序就是由一系列语句组成。 JS的标识符 代码中用来标识变量、函数、或属性的字符序列。 在JavaScript中，标识符只能包含字母或数字或下划线（“_”）或美元符号（“$”），且不能以数字开头。标识符与字符串不同之处在于字符串是数据，而标识符是代码的一部分。在 JavaScript 中，无法将标识符转换为字符串，但有时可以将字符串解析为标识符。 JS的if else 语句 if\/else 语句在指定的条件为 true 时，执行代码块。如果条件为 false，会执行另外一个代码块。\nif\/else 语句是 JavaScript 条件语句的一部分, 条件语句用于基于不同的条件来执行不同的动作。\nif 语句 - 只有当指定条件为 true 时，使用该语句来执行代码。\nelse 语句 如果 if 语句的条件为false，则执行该代码块\nelse if 语句 - 检测一个新的条件，如果第一个条件为false\nJS的while for 语句 while 语句可以在某个条件表达式为真的前提下，循环执行指定的一段代码，直到那个表达式不为真时结束循环。 例子: let n = 0; while (n \u0026lt; 3) { n\u002b\u002b; } console.log(n); \/\/ expected output: 3 JS的break continue continue: continue 声明终止当前循环或标记循环的当前迭代中的语句执行，并在下一次迭代时继续执行循环。 例子: let text = \u0026#39;\u0026#39;; for (let i = 0; i \u0026lt; 10; i\u002b\u002b) { if (i === 3) { continue; } text = text \u002b i; } console.",
+  "url":"https:\/\/delta5738.github.io\/post\/js%E8%AF%AD%E6%B3%951\/",
+  "keywords":"[]"
+}
+
+</script>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.101.0 with theme Tranquilpeak 0.5.3-BETA">
+<meta name="author" content="LI MIN">
+<meta name="keywords" content="">
+<meta name="description" content="JS的表达式和语句 JavaScript 中表达式和语句的主要区别在于一条语句执行一个动作，一个表达式产生一个值。 一个表达式执行后一定会生成一个值，而语句不一定会产生值。 语句主要是用来执行动作，程序就是由一系列语句组成。 JS的标识符 代码中用来标识变量、函数、或属性的字符序列。 在JavaScript中，标识符只能包含字母或数字或下划线（“_”）或美元符号（“$”），且不能以数字开头。标识符与字符串不同之处在于字符串是数据，而标识符是代码的一部分。在 JavaScript 中，无法将标识符转换为字符串，但有时可以将字符串解析为标识符。 JS的if else 语句 if/else 语句在指定的条件为 true 时，执行代码块。如果条件为 false，会执行另外一个代码块。
+if/else 语句是 JavaScript 条件语句的一部分, 条件语句用于基于不同的条件来执行不同的动作。
+if 语句 - 只有当指定条件为 true 时，使用该语句来执行代码。
+else 语句 如果 if 语句的条件为false，则执行该代码块
+else if 语句 - 检测一个新的条件，如果第一个条件为false
+JS的while for 语句 while 语句可以在某个条件表达式为真的前提下，循环执行指定的一段代码，直到那个表达式不为真时结束循环。 例子: let n = 0; while (n &lt; 3) { n&#43;&#43;; } console.log(n); // expected output: 3 JS的break continue continue: continue 声明终止当前循环或标记循环的当前迭代中的语句执行，并在下一次迭代时继续执行循环。 例子: let text = &#39;&#39;; for (let i = 0; i &lt; 10; i&#43;&#43;) { if (i === 3) { continue; } text = text &#43; i; } console.">
+
+
+<meta property="og:description" content="JS的表达式和语句 JavaScript 中表达式和语句的主要区别在于一条语句执行一个动作，一个表达式产生一个值。 一个表达式执行后一定会生成一个值，而语句不一定会产生值。 语句主要是用来执行动作，程序就是由一系列语句组成。 JS的标识符 代码中用来标识变量、函数、或属性的字符序列。 在JavaScript中，标识符只能包含字母或数字或下划线（“_”）或美元符号（“$”），且不能以数字开头。标识符与字符串不同之处在于字符串是数据，而标识符是代码的一部分。在 JavaScript 中，无法将标识符转换为字符串，但有时可以将字符串解析为标识符。 JS的if else 语句 if/else 语句在指定的条件为 true 时，执行代码块。如果条件为 false，会执行另外一个代码块。
+if/else 语句是 JavaScript 条件语句的一部分, 条件语句用于基于不同的条件来执行不同的动作。
+if 语句 - 只有当指定条件为 true 时，使用该语句来执行代码。
+else 语句 如果 if 语句的条件为false，则执行该代码块
+else if 语句 - 检测一个新的条件，如果第一个条件为false
+JS的while for 语句 while 语句可以在某个条件表达式为真的前提下，循环执行指定的一段代码，直到那个表达式不为真时结束循环。 例子: let n = 0; while (n &lt; 3) { n&#43;&#43;; } console.log(n); // expected output: 3 JS的break continue continue: continue 声明终止当前循环或标记循环的当前迭代中的语句执行，并在下一次迭代时继续执行循环。 例子: let text = &#39;&#39;; for (let i = 0; i &lt; 10; i&#43;&#43;) { if (i === 3) { continue; } text = text &#43; i; } console.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScript的语法(一)">
+<meta name="twitter:title" content="JavaScript的语法(一)">
+<meta property="og:url" content="https://delta5738.github.io/post/js%E8%AF%AD%E6%B3%951/">
+<meta property="twitter:url" content="https://delta5738.github.io/post/js%E8%AF%AD%E6%B3%951/">
+<meta property="og:site_name" content="Hugo tranquilpeak theme">
+<meta property="og:description" content="JS的表达式和语句 JavaScript 中表达式和语句的主要区别在于一条语句执行一个动作，一个表达式产生一个值。 一个表达式执行后一定会生成一个值，而语句不一定会产生值。 语句主要是用来执行动作，程序就是由一系列语句组成。 JS的标识符 代码中用来标识变量、函数、或属性的字符序列。 在JavaScript中，标识符只能包含字母或数字或下划线（“_”）或美元符号（“$”），且不能以数字开头。标识符与字符串不同之处在于字符串是数据，而标识符是代码的一部分。在 JavaScript 中，无法将标识符转换为字符串，但有时可以将字符串解析为标识符。 JS的if else 语句 if/else 语句在指定的条件为 true 时，执行代码块。如果条件为 false，会执行另外一个代码块。
+if/else 语句是 JavaScript 条件语句的一部分, 条件语句用于基于不同的条件来执行不同的动作。
+if 语句 - 只有当指定条件为 true 时，使用该语句来执行代码。
+else 语句 如果 if 语句的条件为false，则执行该代码块
+else if 语句 - 检测一个新的条件，如果第一个条件为false
+JS的while for 语句 while 语句可以在某个条件表达式为真的前提下，循环执行指定的一段代码，直到那个表达式不为真时结束循环。 例子: let n = 0; while (n &lt; 3) { n&#43;&#43;; } console.log(n); // expected output: 3 JS的break continue continue: continue 声明终止当前循环或标记循环的当前迭代中的语句执行，并在下一次迭代时继续执行循环。 例子: let text = &#39;&#39;; for (let i = 0; i &lt; 10; i&#43;&#43;) { if (i === 3) { continue; } text = text &#43; i; } console.">
+<meta name="twitter:description" content="JS的表达式和语句 JavaScript 中表达式和语句的主要区别在于一条语句执行一个动作，一个表达式产生一个值。 一个表达式执行后一定会生成一个值，而语句不一定会产生值。 语句主要是用来执行动作，程序就是由一系列语句组成。 JS的标识符 代码中用来标识变量、函数、或属性的字符序列。 在JavaScript中，标识符只能包含字母或数字或下划线（“_”）或美元符号（“$”），且不能以数字开头。标识符与字符串不同之处在于字符串是数据，而标识符是代码的一部分。在 JavaScript 中，无法将标识符转换为字符串，但有时可以将字符串解析为标识符。 JS的if else 语句 if/else 语句在指定的条件为 true 时，执行代码块。如果条件为 false，会执行另外一个代码块。
+if/else 语句是 JavaScript 条件语句的一部分, 条件语句用于基于不同的条件来执行不同的动作。
+if 语句 - 只有当指定条件为 true 时，使用该语句来执行代码。
+else 语句 如果 if 语句的条件为false，则执行该代码块
+else if 语句 - 检测一个新的条件，如果第一个条件为false
+JS的while for 语句 while 语句可以在某个条件表达式为真的前提下，循环执行指定的一段代码，直到那个表达式不为真时结束循环。 例子: let n = 0; while (n &lt; 3) { n&#43;&#43;; } console.log(n); // expected output: 3 JS的break continue continue: continue 声明终止当前循环或标记循环的当前迭代中的语句执行，并在下一次迭代时继续执行循环。 例子: let text = &#39;&#39;; for (let i = 0; i &lt; 10; i&#43;&#43;) { if (i === 3) { continue; } text = text &#43; i; } console.">
+<meta property="og:locale" content="zh-cn">
+
+  
+    <meta property="article:published_time" content="2022-08-25T21:03:39">
+  
+  
+    <meta property="article:modified_time" content="2022-08-25T21:03:39">
+  
+  
+  
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c?s=640">
+  <meta property="twitter:image" content="https://www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c?s=640">
+
+
+
+
+
+
+    <title>JavaScript的语法(一)</title>
+
+    <link rel="icon" href="https://delta5738.github.io/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://delta5738.github.io/post/js%E8%AF%AD%E6%B3%951/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    
+    <link rel="stylesheet" href="https://delta5738.github.io/css/style-h6ccsoet3mzkbb0wngshlfbaweimexgqcxj0h5hu4h82olsdzz6wmqdkajm.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://delta5738.github.io/" aria-label="去首页">Hugo tranquilpeak theme</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://delta5738.github.io/#about" aria-label="打开链接: /#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c?s=90" alt="作者的图片" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://delta5738.github.io/#about" aria-label="阅读有关作者的更多信息">
+          <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c?s=110" alt="作者的图片" />
+        </a>
+        <h4 class="sidebar-profile-name">LI MIN</h4>
+        
+          <h5 class="sidebar-profile-bio">Super bio with markdown support <strong>COOL</strong></h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://delta5738.github.io/" title="Home">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-home" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">首页</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://delta5738.github.io/categories" title="Categories">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-bookmark" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">分类</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://delta5738.github.io/tags" title="Tags">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-tags" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">标签</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://delta5738.github.io/archives" title="Archives">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-archive" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">归档</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://delta5738.github.io/#about" title="About">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-question" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">关于</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/kakawait" target="_blank" rel="noopener" title="GitHub">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-github" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://stackoverflow.com/users/636472/kakawait" target="_blank" rel="noopener" title="Stack Overflow">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-stack-overflow" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Stack Overflow</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://delta5738.github.io/index.xml" title="RSS">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-rss" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" id="top">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title">
+      JavaScript的语法(一)
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time datetime="2022-08-25T21:03:39&#43;09:00">
+        
+  八月 25, 2022
+
+      </time>
+    
+    
+  </div>
+
+</div>
+          
+          <div class="post-content markdown">
+            <div class="main-content-wrap">
+              <h1 id="js的表达式和语句">JS的表达式和语句</h1>
+<ul>
+<li>JavaScript 中表达式和语句的主要区别在于一条语句执行一个动作，一个表达式产生一个值。</li>
+<li>一个表达式执行后一定会生成一个值，而语句不一定会产生值。</li>
+<li>语句主要是用来执行动作，程序就是由一系列语句组成。</li>
+</ul>
+<h1 id="js的标识符">JS的标识符</h1>
+<ul>
+<li>代码中用来标识<strong>变量、函数、或属性</strong>的字符序列。</li>
+<li>在JavaScript中，标识符只能包含字母或数字或下划线（“_”）或美元符号（“$”），且不能以数字开头。标识符与字符串不同之处在于字符串是数据，而标识符是代码的一部分。在 JavaScript 中，无法将标识符转换为字符串，但有时可以将字符串解析为标识符。</li>
+</ul>
+<h1 id="js的if-else-语句">JS的if else 语句</h1>
+<ul>
+<li>
+<p>if/else 语句在指定的条件为 true 时，执行代码块。如果条件为 false，会执行另外一个代码块。</p>
+</li>
+<li>
+<p>if/else 语句是 JavaScript 条件语句的一部分, 条件语句用于基于不同的条件来执行不同的动作。</p>
+</li>
+<li>
+<p>if 语句 - 只有当指定条件为 true 时，使用该语句来执行代码。</p>
+</li>
+<li>
+<p>else 语句 如果 if 语句的条件为false，则执行该代码块</p>
+</li>
+<li>
+<p>else if 语句 - 检测一个新的条件，如果第一个条件为false</p>
+</li>
+</ul>
+<h1 id="js的while-for-语句">JS的while for 语句</h1>
+<ul>
+<li>while 语句可以在某个条件表达式为真的前提下，循环执行指定的一段代码，直到那个表达式不为真时结束循环。</li>
+<li>例子:</li>
+</ul>
+<pre tabindex="0"><code>let n = 0;
+
+while (n &lt; 3) {
+  n++;
+}
+
+console.log(n);
+// expected output: 3
+</code></pre><h1 id="js的break-continue">JS的break continue</h1>
+<ul>
+<li>continue:<!-- raw HTML omitted -->
+continue 声明终止当前循环或标记循环的当前迭代中的语句执行，并在下一次迭代时继续执行循环。</li>
+<li>例子:</li>
+</ul>
+<pre tabindex="0"><code>let text = &#39;&#39;;
+
+for (let i = 0; i &lt; 10; i++) {
+  if (i === 3) {
+    continue;
+  }
+  text = text + i;
+}
+
+console.log(text);
+// expected output: &#34;012456789&#34;
+</code></pre><ul>
+<li>break:<!-- raw HTML omitted -->
+break 语句中止当前循环，switch语句或label 语句，并把程序控制流转到紧接着被中止语句后面的语句。</li>
+<li>例子,下面的函数里有个 break 语句，当 i 为 3 时，会中止 while 循环，然后返回 3 * x 的值:</li>
+</ul>
+<pre tabindex="0"><code>function testBreak(x) {
+  var i = 0;
+
+  while (i &lt; 6) {
+    if (i == 3) {
+      break;
+    }
+    i += 1;
+  }
+
+  return i * x;
+}
+</code></pre><ul>
+<li>例子2,在下面的代码中， break 使用在 switch 语句中，当遇到匹配到 case 后，就会执行相应的代码并中断循环体:</li>
+</ul>
+<pre tabindex="0"><code>const food = &#34;sushi&#34;;
+
+switch (food) {
+  case &#34;sushi&#34;:
+    console.log(&#34;Sushi is originally from Japan.&#34;);
+    break;
+  case &#34;pizza&#34;:
+    console.log(&#34;Pizza is originally from Italy.&#34;);
+    break;
+  default:
+    console.log(&#34;I have never heard of that dish.&#34;);
+    break;
+}
+</code></pre><ul>
+<li>例子3,下面的代码中一起使用 break 语句和被标记的块语句。一个 break 语句必须内嵌在它引用的标记中。注意，inner_block 内嵌在 outer_block 中:</li>
+</ul>
+<pre tabindex="0"><code>outer_block:{
+
+  inner_block:{
+    console.log (&#39;1&#39;);
+    break outer_block;      // breaks out of both inner_block and outer_block
+    console.log (&#39;:-(&#39;);    // skipped
+  }
+
+  console.log (&#39;2&#39;);        // skipped
+}
+</code></pre><h1 id="js的label语句">JS的label语句</h1>
+<ul>
+<li>label:<!-- raw HTML omitted -->
+标记语句可以和 break 或 continue 语句一起使用。标记就是在一条语句前面加个可以引用的标识符。</li>
+<li>可使用一个标签来唯一标记一个循环，然后使用 break 或 continue 语句来指示程序是否中断循环或继续执行。需要注意的是，JavaScript 没有 goto 语句，标记只能和 break 或 continue 一起使用。</li>
+<li>例子:</li>
+</ul>
+<pre tabindex="0"><code>let str = &#39;&#39;;
+
+loop1:
+for (let i = 0; i &lt; 5; i++) {
+  if (i === 1) {
+    continue loop1;
+  }
+  str = str + i;
+}
+
+console.log(str);
+// expected output: &#34;0234&#34;
+</code></pre><ul>
+<li>在 for 循环中使用带标记的 continue 语句:</li>
+</ul>
+<pre tabindex="0"><code>var i, j;
+
+    loop1:
+    for (i = 0; i &lt; 3; i++) {      //The first for statement is labeled &#34;loop1&#34;
+       loop2:
+       for (j = 0; j &lt; 3; j++) {   //The second for statement is labeled &#34;loop2&#34;
+          if (i === 1 &amp;&amp; j === 1) {
+             continue loop1;
+          }
+          console.log(&#39;i = &#39; + i + &#39;, j = &#39; + j);
+       }
+    }
+
+// Output is:
+//   &#34;i = 0, j = 0&#34;
+//   &#34;i = 0, j = 1&#34;
+//   &#34;i = 0, j = 2&#34;
+//   &#34;i = 1, j = 0&#34;
+//   &#34;i = 2, j = 0&#34;
+//   &#34;i = 2, j = 1&#34;
+//   &#34;i = 2, j = 2&#34;
+// Notice how it skips both &#34;i = 1, j = 1&#34; and &#34;i = 1, j = 2&#34;
+</code></pre><ul>
+<li>使用带标记的 continue 语句
+若给定一个数据数组和一个测试数组，则下面的例子会统计通过测试的数据的数量:</li>
+</ul>
+<pre tabindex="0"><code>var itemsPassed = 0;
+var i, j;
+
+top:
+for (i = 0; i &lt; items.length; i++) {
+  for (j = 0; j &lt; tests.length; j++) {
+    if (!tests[j].pass(items[i])) {
+      continue top;
+    }
+  }
+
+  itemsPassed++;
+}
+</code></pre><ul>
+<li>在 for 循环中使用带标记的 break:</li>
+</ul>
+<pre tabindex="0"><code>var i, j;
+
+loop1:
+for (i = 0; i &lt; 3; i++) {      //The first for statement is labeled &#34;loop1&#34;
+   loop2:
+   for (j = 0; j &lt; 3; j++) {   //The second for statement is labeled &#34;loop2&#34;
+      if (i == 1 &amp;&amp; j == 1) {
+         break loop1;
+      }
+      console.log(&#34;i = &#34; + i + &#34;, j = &#34; + j);
+   }
+}
+
+// Output is:
+//   &#34;i = 0, j = 0&#34;
+//   &#34;i = 0, j = 1&#34;
+//   &#34;i = 0, j = 2&#34;
+//   &#34;i = 1, j = 0&#34;
+// Notice the difference with the previous continue example
+</code></pre><ul>
+<li>使用带标记的 break 语句
+若给定一个数据数组和一个测试数组，则下面的例子会判断是否所有数据均通过了测试:</li>
+</ul>
+<pre tabindex="0"><code>var allPass = true;
+var i, j;
+
+top:
+for (i = 0; items.length; i++)
+  for (j = 0; j &lt; tests.length; i++)
+    if (!tests[j].pass(items[i])){
+      allPass = false;
+      break top;
+    }
+</code></pre><ul>
+<li>在标记块中使用 break,你可以在代码块中使用标记，但只有 break 语句可以使用非循环标记:</li>
+</ul>
+<pre tabindex="0"><code>foo: {
+  console.log(&#39;face&#39;);
+  break foo;
+  console.log(&#39;this will not be executed&#39;);
+}
+console.log(&#39;swap&#39;);
+
+// this will log:
+
+// &#34;face&#34;
+// &#34;swap
+</code></pre>
+              
+
+
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+            
+            
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--disabled">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://delta5738.github.io/post/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/" data-tooltip="JavaScript的诞生" aria-label="上一篇: JavaScript的诞生">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="分享这个帖子">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://delta5738.github.io/post/js%E8%AF%AD%E6%B3%951/" title="分享到 Facebook" aria-label="分享到 Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://delta5738.github.io/post/js%E8%AF%AD%E6%B3%951/" title="分享到 Twitter" aria-label="分享到 Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://delta5738.github.io/post/js%E8%AF%AD%E6%B3%951/" title="分享到 Linkedin" aria-label="分享到 Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+    <li class="post-action">
+      <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="发表评论">
+        <i class="far fa-comment"></i>
+      </a>
+    </li>
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="回到顶部">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+            
+  
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+    <script type="text/javascript">
+      var disqus_config = function() {
+        this.page.url = 'https:\/\/delta5738.github.io\/post\/js%E8%AF%AD%E6%B3%951\/';
+        
+          this.page.identifier = '\/post\/js%E8%AF%AD%E6%B3%951\/'
+        
+      };
+      (function() {
+        
+        
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+          document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+          return;
+        }
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = 'hugo-tranquilpeak-theme';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+  
+
+
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2022 LI MIN. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--disabled">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://delta5738.github.io/post/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/" data-tooltip="JavaScript的诞生" aria-label="上一篇: JavaScript的诞生">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="分享这个帖子">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://delta5738.github.io/post/js%E8%AF%AD%E6%B3%951/" title="分享到 Facebook" aria-label="分享到 Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://delta5738.github.io/post/js%E8%AF%AD%E6%B3%951/" title="分享到 Twitter" aria-label="分享到 Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://delta5738.github.io/post/js%E8%AF%AD%E6%B3%951/" title="分享到 Linkedin" aria-label="分享到 Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+    <li class="post-action">
+      <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="发表评论">
+        <i class="far fa-comment"></i>
+      </a>
+    </li>
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="回到顶部">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+      </div>
+      
+<div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-times"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdelta5738.github.io%2Fpost%2Fjs%25E8%25AF%25AD%25E6%25B3%25951%2F" aria-label="分享到 Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i><span>分享到 Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fdelta5738.github.io%2Fpost%2Fjs%25E8%25AF%25AD%25E6%25B3%25951%2F" aria-label="分享到 Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i><span>分享到 Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fdelta5738.github.io%2Fpost%2Fjs%25E8%25AF%25AD%25E6%25B3%25951%2F" aria-label="分享到 Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i><span>分享到 Linkedin</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+
+
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-times"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c?s=110" alt="作者的图片" />
+    
+    <h4 id="about-card-name">LI MIN</h4>
+    
+      <div id="about-card-bio">Super bio with markdown support <strong>COOL</strong></div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Your job title
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker-alt"></i>
+        <br/>
+        France
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://delta5738.github.io/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js" integrity="sha512-z+/WWfyD5tccCukM4VvONpEtLmbAm5LDu7eKiyMQJ9m7OfPEDL7gENyDRL3Yfe8XAuGsS2fS4xSMnl6d30kqGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="https://delta5738.github.io/js/script-yqzy9wdlzix4lbbwdnzvwx3egsne77earqmn73v9uno8aupuph8wfguccut.min.js"></script>
+
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-gE8KAQyFIzV1C9+GZ8TKJHZS2s+n7EjNtC+IMRn1l5+WYJTHOODUM6JSjZhFhqXmc7bG8Av6XXpckA4tYhflnw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/apache.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-EWROca+bote+7Oaaar1F6y74iZj1r1F9rm/ly7o+/FwJopbBaWtsFDmaKoZDd3QiGU2pGacBirHJNivmGLYrow==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/go.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-GDVzAn0wpx1yVtQsRWmFc6PhJiLBPdUic+h4GWgljBh904O3JU10fk9EKNpVyIoPqkFn54rgL2QBG4BmUTMpiQ==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/http.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-UgZlma8NzkrDb/NWgmLIcTrH7i/CSnLLDRFqCSNF5NGPpjKmzyM25qcoXGOup8+cDakKyaiTDd7N4dyH4YT+IA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/less.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-lot9koe73sfXIrUvIPM/UEhuMciN56RPyBdOyZgfO53P2lkWyyXN7J+njcxIIBRV+nVDQeiWtiXg+bLAJZDTfg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/nginx.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-Zd3e7XxHP00TD0Imr0PIfeM0fl0v95kMWuhyAS3Wn1UTSXTkz0OhtRgBAr4JlmADRgiXr4x7lpeUdqaGN8xIog==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/puppet.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-qtqDO052iXMSP+5d/aE/jMtL9vIIGvONgTJziC2K/ZIB1yEGa55WVxGE9/08rSQ62EoDifS9SWVGZ7ihSLhzMA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/scss.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-1NmkjnEDnwwwcu28KoQF8vs3oaPFokQHbmbtwGhFfeDsQZtVFI8zW2aE9O8yMYdpdyKV/5blE4pSWw4Z/Sv97w==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/stylus.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-B2wSfruPjr8EJL6IIzQr1eAuDwrsfIfccNf/LCEdxELCgC/S/ZMt/Uvk80aD79m7IqOqW+Sw8nbkvha20yZpzg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/swift.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-28oDiQZGKUVN6wQ7PSLPNipOcmkCALXKwOi7bnkyFf8QiMZQxG9EQoy/iiNx6Zxj2cG2SbVa4dXKigQhu7GiFw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/yaml.min.js"></script>
+  
+
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      CommonHTML: { linebreaks: { automatic: true } },
+      tex2jax: { inlineMath: [ ['$', '$'], ['\\(','\\)'] ], displayMath: [ ['$$','$$'], ['\\[', '\\]'] ], processEscapes: false },
+      messageStyle: 'none'
+    });
+  </script>
+
+
+
+    
+  </body>
+</html>
+
