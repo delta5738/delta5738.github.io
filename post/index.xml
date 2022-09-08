@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Hugo tranquilpeak theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 Aug 2022 21:03:39 +0900</lastBuildDate><atom:link href="https://delta5738.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 Sep 2022 01:03:39 +0900</lastBuildDate><atom:link href="https://delta5738.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JS 对象基本用法</title>
+      <link>https://delta5738.github.io/post/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</link>
+      <pubDate>Thu, 08 Sep 2022 01:03:39 +0900</pubDate>
+      
+      <guid>https://delta5738.github.io/post/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</guid>
+      <description>对象基本概念 JavaScript 的设计是一个简单的基于对象的范式。一个对象就是一系列属性的集合，一个属性包含一个名和一个值。一个属性的值可以是函数，这种情况下属性也被称为方法。 对象就是一组&amp;quot;键值对&amp;quot;（key-value）,是一种无序的复合数据集合 对象的每一个键名又称为“属性”（property），它的“键值”可以是任何数据类型。 键名是字符串，不是标识符，可以包含任意字符 引号可以省略，省略之后就只能写标识符，就算引号省略，键名也还是字符串 可以通过 Object.keys(obj)得到所有 obj 的所有 key 如果键名不符合标识名的条件（比如第一个字符为数字，或者含有空格或运算符），且也不是数字，则必须加上引号，否则会报错。 对象中未赋值的属性的值为undefined（而不是null） 声明对象的两种语法 简单写法: let obj={ &amp;#39;name&amp;#39;:&amp;#39;frank&amp;#39;,&amp;#39;age&amp;#39;:18 } 正规写法： let obj = new Object({ name: &amp;#34;frank&amp;#34;, }); 如何删除对象的属性 可以用 delete 操作符删除一个不是继承而来的属性。下面的例子说明如何删除一个属性： //Creates a new object, myobj, with two properties, a and b. var myobj = new Object; myobj.a = 5; myobj.b = 12; //Removes the a property, leaving myobj with only the b property. delete myobj.a; 如果一个全局变量不是用 var 关键字声明的话，你也可以用 delete 删除它 如何查看对象的属性 for&amp;hellip;in 循环 该方法依次访问一个对象及其原型链中所有可枚举的属性。 Object.</description>
+    </item>
+    
     <item>
       <title>JavaScript的语法(一)</title>
       <link>https://delta5738.github.io/post/js%E8%AF%AD%E6%B3%951/</link>

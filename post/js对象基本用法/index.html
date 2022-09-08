@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <script type="application/ld+json">
+
+{  
+  "@context":"http://schema.org",
+  "@type":"Website",
+  "@id":"https:\/\/delta5738.github.io",
+  "author": {
+    "@type": "Person",
+    "name": "LI MIN",
+    
+    "image": "https://www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c"
+    
+  },
+  "name":"Hugo tranquilpeak theme",
+  "description":"对象基本概念 JavaScript 的设计是一个简单的基于对象的范式。一个对象就是一系列属性的集合，一个属性包含一个名和一个值。一个属性的值可以是函数，这种情况下属性也被称为方法。 对象就是一组\u0026quot;键值对\u0026quot;（key-value）,是一种无序的复合数据集合 对象的每一个键名又称为“属性”（property），它的“键值”可以是任何数据类型。 键名是字符串，不是标识符，可以包含任意字符 引号可以省略，省略之后就只能写标识符，就算引号省略，键名也还是字符串 可以通过 Object.keys(obj)得到所有 obj 的所有 key 如果键名不符合标识名的条件（比如第一个字符为数字，或者含有空格或运算符），且也不是数字，则必须加上引号，否则会报错。 对象中未赋值的属性的值为undefined（而不是null） 声明对象的两种语法 简单写法: let obj={ \u0026#39;name\u0026#39;:\u0026#39;frank\u0026#39;,\u0026#39;age\u0026#39;:18 } 正规写法： let obj = new Object({ name: \u0026#34;frank\u0026#34;, }); 如何删除对象的属性 可以用 delete 操作符删除一个不是继承而来的属性。下面的例子说明如何删除一个属性： \/\/Creates a new object, myobj, with two properties, a and b. var myobj = new Object; myobj.a = 5; myobj.b = 12; \/\/Removes the a property, leaving myobj with only the b property. delete myobj.a; 如果一个全局变量不是用 var 关键字声明的话，你也可以用 delete 删除它 如何查看对象的属性 for\u0026hellip;in 循环 该方法依次访问一个对象及其原型链中所有可枚举的属性。 Object.",
+  "url":"https:\/\/delta5738.github.io\/post\/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95\/",
+  "keywords":"[]"
+}
+
+</script>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.101.0 with theme Tranquilpeak 0.5.3-BETA">
+<meta name="author" content="LI MIN">
+<meta name="keywords" content="">
+<meta name="description" content="对象基本概念 JavaScript 的设计是一个简单的基于对象的范式。一个对象就是一系列属性的集合，一个属性包含一个名和一个值。一个属性的值可以是函数，这种情况下属性也被称为方法。 对象就是一组&quot;键值对&quot;（key-value）,是一种无序的复合数据集合 对象的每一个键名又称为“属性”（property），它的“键值”可以是任何数据类型。 键名是字符串，不是标识符，可以包含任意字符 引号可以省略，省略之后就只能写标识符，就算引号省略，键名也还是字符串 可以通过 Object.keys(obj)得到所有 obj 的所有 key 如果键名不符合标识名的条件（比如第一个字符为数字，或者含有空格或运算符），且也不是数字，则必须加上引号，否则会报错。 对象中未赋值的属性的值为undefined（而不是null） 声明对象的两种语法 简单写法: let obj={ &#39;name&#39;:&#39;frank&#39;,&#39;age&#39;:18 } 正规写法： let obj = new Object({ name: &#34;frank&#34;, }); 如何删除对象的属性 可以用 delete 操作符删除一个不是继承而来的属性。下面的例子说明如何删除一个属性： //Creates a new object, myobj, with two properties, a and b. var myobj = new Object; myobj.a = 5; myobj.b = 12; //Removes the a property, leaving myobj with only the b property. delete myobj.a; 如果一个全局变量不是用 var 关键字声明的话，你也可以用 delete 删除它 如何查看对象的属性 for&hellip;in 循环 该方法依次访问一个对象及其原型链中所有可枚举的属性。 Object.">
+
+
+<meta property="og:description" content="对象基本概念 JavaScript 的设计是一个简单的基于对象的范式。一个对象就是一系列属性的集合，一个属性包含一个名和一个值。一个属性的值可以是函数，这种情况下属性也被称为方法。 对象就是一组&quot;键值对&quot;（key-value）,是一种无序的复合数据集合 对象的每一个键名又称为“属性”（property），它的“键值”可以是任何数据类型。 键名是字符串，不是标识符，可以包含任意字符 引号可以省略，省略之后就只能写标识符，就算引号省略，键名也还是字符串 可以通过 Object.keys(obj)得到所有 obj 的所有 key 如果键名不符合标识名的条件（比如第一个字符为数字，或者含有空格或运算符），且也不是数字，则必须加上引号，否则会报错。 对象中未赋值的属性的值为undefined（而不是null） 声明对象的两种语法 简单写法: let obj={ &#39;name&#39;:&#39;frank&#39;,&#39;age&#39;:18 } 正规写法： let obj = new Object({ name: &#34;frank&#34;, }); 如何删除对象的属性 可以用 delete 操作符删除一个不是继承而来的属性。下面的例子说明如何删除一个属性： //Creates a new object, myobj, with two properties, a and b. var myobj = new Object; myobj.a = 5; myobj.b = 12; //Removes the a property, leaving myobj with only the b property. delete myobj.a; 如果一个全局变量不是用 var 关键字声明的话，你也可以用 delete 删除它 如何查看对象的属性 for&hellip;in 循环 该方法依次访问一个对象及其原型链中所有可枚举的属性。 Object.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JS 对象基本用法">
+<meta name="twitter:title" content="JS 对象基本用法">
+<meta property="og:url" content="https://delta5738.github.io/post/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/">
+<meta property="twitter:url" content="https://delta5738.github.io/post/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/">
+<meta property="og:site_name" content="Hugo tranquilpeak theme">
+<meta property="og:description" content="对象基本概念 JavaScript 的设计是一个简单的基于对象的范式。一个对象就是一系列属性的集合，一个属性包含一个名和一个值。一个属性的值可以是函数，这种情况下属性也被称为方法。 对象就是一组&quot;键值对&quot;（key-value）,是一种无序的复合数据集合 对象的每一个键名又称为“属性”（property），它的“键值”可以是任何数据类型。 键名是字符串，不是标识符，可以包含任意字符 引号可以省略，省略之后就只能写标识符，就算引号省略，键名也还是字符串 可以通过 Object.keys(obj)得到所有 obj 的所有 key 如果键名不符合标识名的条件（比如第一个字符为数字，或者含有空格或运算符），且也不是数字，则必须加上引号，否则会报错。 对象中未赋值的属性的值为undefined（而不是null） 声明对象的两种语法 简单写法: let obj={ &#39;name&#39;:&#39;frank&#39;,&#39;age&#39;:18 } 正规写法： let obj = new Object({ name: &#34;frank&#34;, }); 如何删除对象的属性 可以用 delete 操作符删除一个不是继承而来的属性。下面的例子说明如何删除一个属性： //Creates a new object, myobj, with two properties, a and b. var myobj = new Object; myobj.a = 5; myobj.b = 12; //Removes the a property, leaving myobj with only the b property. delete myobj.a; 如果一个全局变量不是用 var 关键字声明的话，你也可以用 delete 删除它 如何查看对象的属性 for&hellip;in 循环 该方法依次访问一个对象及其原型链中所有可枚举的属性。 Object.">
+<meta name="twitter:description" content="对象基本概念 JavaScript 的设计是一个简单的基于对象的范式。一个对象就是一系列属性的集合，一个属性包含一个名和一个值。一个属性的值可以是函数，这种情况下属性也被称为方法。 对象就是一组&quot;键值对&quot;（key-value）,是一种无序的复合数据集合 对象的每一个键名又称为“属性”（property），它的“键值”可以是任何数据类型。 键名是字符串，不是标识符，可以包含任意字符 引号可以省略，省略之后就只能写标识符，就算引号省略，键名也还是字符串 可以通过 Object.keys(obj)得到所有 obj 的所有 key 如果键名不符合标识名的条件（比如第一个字符为数字，或者含有空格或运算符），且也不是数字，则必须加上引号，否则会报错。 对象中未赋值的属性的值为undefined（而不是null） 声明对象的两种语法 简单写法: let obj={ &#39;name&#39;:&#39;frank&#39;,&#39;age&#39;:18 } 正规写法： let obj = new Object({ name: &#34;frank&#34;, }); 如何删除对象的属性 可以用 delete 操作符删除一个不是继承而来的属性。下面的例子说明如何删除一个属性： //Creates a new object, myobj, with two properties, a and b. var myobj = new Object; myobj.a = 5; myobj.b = 12; //Removes the a property, leaving myobj with only the b property. delete myobj.a; 如果一个全局变量不是用 var 关键字声明的话，你也可以用 delete 删除它 如何查看对象的属性 for&hellip;in 循环 该方法依次访问一个对象及其原型链中所有可枚举的属性。 Object.">
+<meta property="og:locale" content="zh-cn">
+
+  
+    <meta property="article:published_time" content="2022-09-08T01:03:39">
+  
+  
+    <meta property="article:modified_time" content="2022-09-08T01:03:39">
+  
+  
+  
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c?s=640">
+  <meta property="twitter:image" content="https://www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c?s=640">
+
+
+
+
+
+
+    <title>JS 对象基本用法</title>
+
+    <link rel="icon" href="https://delta5738.github.io/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://delta5738.github.io/post/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    
+    <link rel="stylesheet" href="https://delta5738.github.io/css/style-h6ccsoet3mzkbb0wngshlfbaweimexgqcxj0h5hu4h82olsdzz6wmqdkajm.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://delta5738.github.io/" aria-label="去首页">Hugo tranquilpeak theme</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://delta5738.github.io/#about" aria-label="打开链接: /#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c?s=90" alt="作者的图片" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://delta5738.github.io/#about" aria-label="阅读有关作者的更多信息">
+          <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c?s=110" alt="作者的图片" />
+        </a>
+        <h4 class="sidebar-profile-name">LI MIN</h4>
+        
+          <h5 class="sidebar-profile-bio">Super bio with markdown support <strong>COOL</strong></h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://delta5738.github.io/" title="Home">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-home" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">首页</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://delta5738.github.io/categories" title="Categories">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-bookmark" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">分类</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://delta5738.github.io/tags" title="Tags">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-tags" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">标签</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://delta5738.github.io/archives" title="Archives">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-archive" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">归档</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://delta5738.github.io/#about" title="About">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-question" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">关于</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/kakawait" target="_blank" rel="noopener" title="GitHub">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-github" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://stackoverflow.com/users/636472/kakawait" target="_blank" rel="noopener" title="Stack Overflow">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-stack-overflow" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Stack Overflow</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://delta5738.github.io/index.xml" title="RSS">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-rss" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" id="top">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title">
+      JS 对象基本用法
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time datetime="2022-09-08T01:03:39&#43;09:00">
+        
+  九月 8, 2022
+
+      </time>
+    
+    
+  </div>
+
+</div>
+          
+          <div class="post-content markdown">
+            <div class="main-content-wrap">
+              <h1 id="对象基本概念">对象基本概念</h1>
+<ul>
+<li>JavaScript 的设计是一个简单的基于对象的范式。一个对象就是一系列属性的集合，一个属性包含一个名和一个值。一个属性的值可以是函数，这种情况下属性也被称为方法。<!-- raw HTML omitted --></li>
+<li>对象就是一组&quot;键值对&quot;（key-value）,是一种无序的复合数据集合<!-- raw HTML omitted --></li>
+<li>对象的每一个键名又称为“属性”（property），它的“键值”可以是任何数据类型。</li>
+<li>键名是字符串，不是标识符，可以包含任意字符<!-- raw HTML omitted --></li>
+<li>引号可以省略，省略之后就只能写标识符，就算引号省略，键名也还是字符串<!-- raw HTML omitted --></li>
+<li>可以通过 Object.keys(obj)得到所有 obj 的所有 key</li>
+<li>如果键名不符合标识名的条件（比如第一个字符为数字，或者含有空格或运算符），且也不是数字，则必须加上引号，否则会报错。</li>
+<li>对象中未赋值的属性的值为undefined（而不是null）</li>
+</ul>
+<h1 id="声明对象的两种语法">声明对象的两种语法</h1>
+<ul>
+<li>简单写法:</li>
+</ul>
+<pre tabindex="0"><code>let obj={
+ &#39;name&#39;:&#39;frank&#39;,&#39;age&#39;:18
+}
+</code></pre><ul>
+<li>正规写法：</li>
+</ul>
+<pre tabindex="0"><code>let obj = new Object({
+ name: &#34;frank&#34;,
+});
+</code></pre><h1 id="如何删除对象的属性">如何删除对象的属性</h1>
+<ul>
+<li>可以用 delete 操作符删除一个不是继承而来的属性。下面的例子说明如何删除一个属性：</li>
+</ul>
+<pre tabindex="0"><code>//Creates a new object, myobj, with two properties, a and b.
+var myobj = new Object;
+myobj.a = 5;
+myobj.b = 12;
+
+//Removes the a property, leaving myobj with only the b property.
+delete myobj.a;
+</code></pre><ul>
+<li>如果一个全局变量不是用 var 关键字声明的话，你也可以用 delete 删除它</li>
+</ul>
+<h1 id="如何查看对象的属性">如何查看对象的属性</h1>
+<ul>
+<li>for&hellip;in 循环 该方法依次访问一个对象及其原型链中所有可枚举的属性。</li>
+<li>Object.keys(o) 该方法返回对象 o 自身包含（不包括原型中）的所有可枚举属性的名称的数组。</li>
+<li>Object.getOwnPropertyNames(o) 该方法返回对象 o 自身包含（不包括原型中）的所有属性 (无论是否可枚举) 的名称的数组。</li>
+<li>查看一个对象自身+共有属性：<!-- raw HTML omitted -->
+console.dir(obj)<!-- raw HTML omitted -->
+Object.keys 打印出 obj.<strong>proto</strong><!-- raw HTML omitted --></li>
+<li>判断一个对象是自身属性还是共有属性：<!-- raw HTML omitted -->
+obj.hasOwnProperty(&rsquo;toString')</li>
+</ul>
+<h1 id="如何修改或增加对象的属性">如何修改或增加对象的属性</h1>
+<ul>
+<li>直接赋值</li>
+</ul>
+<pre tabindex="0"><code>let obj ={name:&#39;frank&#39;} //name是字符串
+obj.name=&#39;frank&#39;
+obj[&#39;name&#39;]=&#39;frank&#39;
+obj[name]=&#39;frank&#39; //是错误的，因为name的值不确定
+obj[&#39;na&#39;+&#39;me&#39;]=&#39;frank&#39;
+let key=&#39;name&#39;, obj[key]:&#39;frank&#39; //声明变量
+let key=&#39;name&#39;;obj.key=&#39;frank&#39; //错误，因为obj.key等价于obj.[&#39;key&#39;]
+</code></pre><ul>
+<li>批量赋值</li>
+</ul>
+<pre tabindex="0"><code>Object.assign(obj.{age:18,gender:&#39;man&#39;})
+</code></pre><ul>
+<li>修改隐藏属性:Object.create:</li>
+</ul>
+<pre tabindex="0"><code>let obj=Object.create(common),
+obj.name=&#39;frank&#39;,
+let obj2=Object.create(common),
+obj2.name=&#39;jack&#39;
+</code></pre><h2 id="name-in-obj-和-objhasownpropertyname-的区别">&rsquo;name&rsquo; in obj 和 obj.hasOwnProperty(&rsquo;name&rsquo;) 的区别</h2>
+<ul>
+<li>&lsquo;xxx&rsquo; in obj 并不知道查看的是自身属性还是共有属性；</li>
+<li>obj.hasOwnProperty(‘xxx&rsquo;)查看的是自身的属性</li>
+</ul>
+
+              
+
+
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+            
+            
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--disabled">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://delta5738.github.io/post/js%E8%AF%AD%E6%B3%951/" data-tooltip="JavaScript的语法(一)" aria-label="上一篇: JavaScript的语法(一)">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="分享这个帖子">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://delta5738.github.io/post/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" title="分享到 Facebook" aria-label="分享到 Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://delta5738.github.io/post/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" title="分享到 Twitter" aria-label="分享到 Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://delta5738.github.io/post/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" title="分享到 Linkedin" aria-label="分享到 Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+    <li class="post-action">
+      <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="发表评论">
+        <i class="far fa-comment"></i>
+      </a>
+    </li>
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="回到顶部">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+            
+  
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+    <script type="text/javascript">
+      var disqus_config = function() {
+        this.page.url = 'https:\/\/delta5738.github.io\/post\/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95\/';
+        
+          this.page.identifier = '\/post\/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95\/'
+        
+      };
+      (function() {
+        
+        
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+          document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+          return;
+        }
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = 'hugo-tranquilpeak-theme';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+  
+
+
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2022 LI MIN. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--disabled">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://delta5738.github.io/post/js%E8%AF%AD%E6%B3%951/" data-tooltip="JavaScript的语法(一)" aria-label="上一篇: JavaScript的语法(一)">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="分享这个帖子">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://delta5738.github.io/post/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" title="分享到 Facebook" aria-label="分享到 Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://delta5738.github.io/post/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" title="分享到 Twitter" aria-label="分享到 Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://delta5738.github.io/post/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" title="分享到 Linkedin" aria-label="分享到 Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+    <li class="post-action">
+      <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="发表评论">
+        <i class="far fa-comment"></i>
+      </a>
+    </li>
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="回到顶部">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+      </div>
+      
+<div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-times"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdelta5738.github.io%2Fpost%2Fjs%25E5%25AF%25B9%25E8%25B1%25A1%25E5%259F%25BA%25E6%259C%25AC%25E7%2594%25A8%25E6%25B3%2595%2F" aria-label="分享到 Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i><span>分享到 Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fdelta5738.github.io%2Fpost%2Fjs%25E5%25AF%25B9%25E8%25B1%25A1%25E5%259F%25BA%25E6%259C%25AC%25E7%2594%25A8%25E6%25B3%2595%2F" aria-label="分享到 Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i><span>分享到 Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fdelta5738.github.io%2Fpost%2Fjs%25E5%25AF%25B9%25E8%25B1%25A1%25E5%259F%25BA%25E6%259C%25AC%25E7%2594%25A8%25E6%25B3%2595%2F" aria-label="分享到 Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i><span>分享到 Linkedin</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+
+
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-times"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c?s=110" alt="作者的图片" />
+    
+    <h4 id="about-card-name">LI MIN</h4>
+    
+      <div id="about-card-bio">Super bio with markdown support <strong>COOL</strong></div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Your job title
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker-alt"></i>
+        <br/>
+        France
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://delta5738.github.io/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js" integrity="sha512-z+/WWfyD5tccCukM4VvONpEtLmbAm5LDu7eKiyMQJ9m7OfPEDL7gENyDRL3Yfe8XAuGsS2fS4xSMnl6d30kqGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="https://delta5738.github.io/js/script-yqzy9wdlzix4lbbwdnzvwx3egsne77earqmn73v9uno8aupuph8wfguccut.min.js"></script>
+
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-gE8KAQyFIzV1C9+GZ8TKJHZS2s+n7EjNtC+IMRn1l5+WYJTHOODUM6JSjZhFhqXmc7bG8Av6XXpckA4tYhflnw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/apache.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-EWROca+bote+7Oaaar1F6y74iZj1r1F9rm/ly7o+/FwJopbBaWtsFDmaKoZDd3QiGU2pGacBirHJNivmGLYrow==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/go.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-GDVzAn0wpx1yVtQsRWmFc6PhJiLBPdUic+h4GWgljBh904O3JU10fk9EKNpVyIoPqkFn54rgL2QBG4BmUTMpiQ==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/http.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-UgZlma8NzkrDb/NWgmLIcTrH7i/CSnLLDRFqCSNF5NGPpjKmzyM25qcoXGOup8+cDakKyaiTDd7N4dyH4YT+IA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/less.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-lot9koe73sfXIrUvIPM/UEhuMciN56RPyBdOyZgfO53P2lkWyyXN7J+njcxIIBRV+nVDQeiWtiXg+bLAJZDTfg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/nginx.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-Zd3e7XxHP00TD0Imr0PIfeM0fl0v95kMWuhyAS3Wn1UTSXTkz0OhtRgBAr4JlmADRgiXr4x7lpeUdqaGN8xIog==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/puppet.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-qtqDO052iXMSP+5d/aE/jMtL9vIIGvONgTJziC2K/ZIB1yEGa55WVxGE9/08rSQ62EoDifS9SWVGZ7ihSLhzMA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/scss.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-1NmkjnEDnwwwcu28KoQF8vs3oaPFokQHbmbtwGhFfeDsQZtVFI8zW2aE9O8yMYdpdyKV/5blE4pSWw4Z/Sv97w==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/stylus.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-B2wSfruPjr8EJL6IIzQr1eAuDwrsfIfccNf/LCEdxELCgC/S/ZMt/Uvk80aD79m7IqOqW+Sw8nbkvha20yZpzg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/swift.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-28oDiQZGKUVN6wQ7PSLPNipOcmkCALXKwOi7bnkyFf8QiMZQxG9EQoy/iiNx6Zxj2cG2SbVa4dXKigQhu7GiFw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/yaml.min.js"></script>
+  
+
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      CommonHTML: { linebreaks: { automatic: true } },
+      tex2jax: { inlineMath: [ ['$', '$'], ['\\(','\\)'] ], displayMath: [ ['$$','$$'], ['\\[', '\\]'] ], processEscapes: false },
+      messageStyle: 'none'
+    });
+  </script>
+
+
+
+    
+  </body>
+</html>
+
