@@ -6,7 +6,16 @@
     <description>Recent content on Hugo tranquilpeak theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Sep 2022 01:03:39 +0900</lastBuildDate><atom:link href="https://delta5738.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 Oct 2022 01:03:39 +0900</lastBuildDate><atom:link href="https://delta5738.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JS函数的执行时机</title>
+      <link>https://delta5738.github.io/post/js%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/</link>
+      <pubDate>Sat, 08 Oct 2022 01:03:39 +0900</pubDate>
+      
+      <guid>https://delta5738.github.io/post/js%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/</guid>
+      <description>JS函数的执行时机 let i = 0 for(i = 0; i&amp;lt;6; i++){ setTimeout(()=&amp;gt;{ console.log(i) },0) } 当有setTimeout()存在的时候,会在for循环执行完毕之后才打印出6个i,所以会出现6个6 for(let i = 0; i&amp;lt;6; i++){ setTimeout(()=&amp;gt;{ console.log(i) },0) } 但是把let i = 0放到for循环当中时,则可以打印出 0、1、2、3、4、5 当let在for循环中时,let为循环的每次迭代获取一个新的绑定。这意味着每个闭包都会捕获一个不同的i实例,所以就算for循环执行完毕,i依旧会有6个不同的值 </description>
+    </item>
+    
     <item>
       <title>JS 对象基本用法</title>
       <link>https://delta5738.github.io/post/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</link>
