@@ -16,8 +16,8 @@
     
   },
   "name":"Hugo tranquilpeak theme",
-  "description":"对象基本概念 JavaScript 的设计是一个简单的基于对象的范式。一个对象就是一系列属性的集合，一个属性包含一个名和一个值。一个属性的值可以是函数，这种情况下属性也被称为方法。 对象就是一组\u0026quot;键值对\u0026quot;（key-value）,是一种无序的复合数据集合 对象的每一个键名又称为“属性”（property），它的“键值”可以是任何数据类型。 键名是字符串，不是标识符，可以包含任意字符 引号可以省略，省略之后就只能写标识符，就算引号省略，键名也还是字符串 可以通过 Object.keys(obj)得到所有 obj 的所有 key 如果键名不符合标识名的条件（比如第一个字符为数字，或者含有空格或运算符），且也不是数字，则必须加上引号，否则会报错。 对象中未赋值的属性的值为undefined（而不是null） 声明对象的两种语法 简单写法: let obj={ \u0026#39;name\u0026#39;:\u0026#39;frank\u0026#39;,\u0026#39;age\u0026#39;:18 } 正规写法： let obj = new Object({ name: \u0026#34;frank\u0026#34;, }); 如何删除对象的属性 可以用 delete 操作符删除一个不是继承而来的属性。下面的例子说明如何删除一个属性： \/\/Creates a new object, myobj, with two properties, a and b. var myobj = new Object; myobj.a = 5; myobj.b = 12; \/\/Removes the a property, leaving myobj with only the b property. delete myobj.a; 如果一个全局变量不是用 var 关键字声明的话，你也可以用 delete 删除它 如何查看对象的属性 for\u0026hellip;in 循环 该方法依次访问一个对象及其原型链中所有可枚举的属性。 Object.",
-  "url":"https:\/\/delta5738.github.io\/post\/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95\/",
+  "description":"jQuery 如何获取元素 要使用 jQuery 获取元素，可以使用 $() 或 jQuery() 函数，将 CSS 选择器作为参数传递进去，以获取满足选择器条件的元素。例如： var elements = $(\u0026#34;.example\u0026#34;); 这将返回一个 jQuery 对象，其中包含所有满足条件的元素。可以通过该对象上的各种方法和属性来操作这些元素。例如：\nvar text = $(\u0026#34;.example\u0026#34;).addclass(\u0026#34;red\u0026#34;).find(\u0026#34;.example\u0026#34;); jQuery 的链式操作是怎样的 jQuery 的链式操作是一种将多个 jQuery 方法链接在一起的技术，以便在同一行代码中对同一组元素进行多个操作。 链式操作的基本原理是，每个 jQuery 方法都返回一个 jQuery 对象，该对象可以继续调用其他 jQuery 方法。例如: $(\u0026#34;#Element\u0026#34;).addClass(\u0026#34;red\u0026#34;).css(\u0026#34;color\u0026#34;, \u0026#34;green\u0026#34;).show(); jQuery 如何创建元素 要使用 jQuery 创建新的元素，可以使用 $() 函数，将 HTML 标记作为参数传递进去，以创建一个新的 jQuery 对象。例如: var div1 = $(\u0026#34;\u0026lt;div\u0026gt;\u0026lt;\/div\u0026gt;\u0026#34;); jQuery 如何移动元素 要使用 jQuery 移动元素，可以使用它的一些 DOM 操作方法，例如 detach()、append()等。这些方法可以将元素从一个位置移动到另一个位置。 jQuery 如何修改元素的属性 使用 jQuery 修改元素的属性，可以使用 attr() 方法。这个方法可以设置或获取元素的属性值。例如: $(\u0026#34;#element\u0026#34;).attr(\u0026#34;title\u0026#34;, \u0026#34;New Title\u0026#34;); 这将将该元素的 title 属性设置为 \u0026ldquo;New Title\u0026rdquo;",
+  "url":"https:\/\/delta5738.github.io\/post\/jquery%E5%8A%9F%E8%83%BD1\/",
   "keywords":"[]"
 }
 
@@ -28,25 +28,25 @@
 <meta name="generator" content="Hugo 0.101.0 with theme Tranquilpeak 0.5.3-BETA">
 <meta name="author" content="LI MIN">
 <meta name="keywords" content="">
-<meta name="description" content="对象基本概念 JavaScript 的设计是一个简单的基于对象的范式。一个对象就是一系列属性的集合，一个属性包含一个名和一个值。一个属性的值可以是函数，这种情况下属性也被称为方法。 对象就是一组&quot;键值对&quot;（key-value）,是一种无序的复合数据集合 对象的每一个键名又称为“属性”（property），它的“键值”可以是任何数据类型。 键名是字符串，不是标识符，可以包含任意字符 引号可以省略，省略之后就只能写标识符，就算引号省略，键名也还是字符串 可以通过 Object.keys(obj)得到所有 obj 的所有 key 如果键名不符合标识名的条件（比如第一个字符为数字，或者含有空格或运算符），且也不是数字，则必须加上引号，否则会报错。 对象中未赋值的属性的值为undefined（而不是null） 声明对象的两种语法 简单写法: let obj={ &#39;name&#39;:&#39;frank&#39;,&#39;age&#39;:18 } 正规写法： let obj = new Object({ name: &#34;frank&#34;, }); 如何删除对象的属性 可以用 delete 操作符删除一个不是继承而来的属性。下面的例子说明如何删除一个属性： //Creates a new object, myobj, with two properties, a and b. var myobj = new Object; myobj.a = 5; myobj.b = 12; //Removes the a property, leaving myobj with only the b property. delete myobj.a; 如果一个全局变量不是用 var 关键字声明的话，你也可以用 delete 删除它 如何查看对象的属性 for&hellip;in 循环 该方法依次访问一个对象及其原型链中所有可枚举的属性。 Object.">
+<meta name="description" content="jQuery 如何获取元素 要使用 jQuery 获取元素，可以使用 $() 或 jQuery() 函数，将 CSS 选择器作为参数传递进去，以获取满足选择器条件的元素。例如： var elements = $(&#34;.example&#34;); 这将返回一个 jQuery 对象，其中包含所有满足条件的元素。可以通过该对象上的各种方法和属性来操作这些元素。例如：
+var text = $(&#34;.example&#34;).addclass(&#34;red&#34;).find(&#34;.example&#34;); jQuery 的链式操作是怎样的 jQuery 的链式操作是一种将多个 jQuery 方法链接在一起的技术，以便在同一行代码中对同一组元素进行多个操作。 链式操作的基本原理是，每个 jQuery 方法都返回一个 jQuery 对象，该对象可以继续调用其他 jQuery 方法。例如: $(&#34;#Element&#34;).addClass(&#34;red&#34;).css(&#34;color&#34;, &#34;green&#34;).show(); jQuery 如何创建元素 要使用 jQuery 创建新的元素，可以使用 $() 函数，将 HTML 标记作为参数传递进去，以创建一个新的 jQuery 对象。例如: var div1 = $(&#34;&lt;div&gt;&lt;/div&gt;&#34;); jQuery 如何移动元素 要使用 jQuery 移动元素，可以使用它的一些 DOM 操作方法，例如 detach()、append()等。这些方法可以将元素从一个位置移动到另一个位置。 jQuery 如何修改元素的属性 使用 jQuery 修改元素的属性，可以使用 attr() 方法。这个方法可以设置或获取元素的属性值。例如: $(&#34;#element&#34;).attr(&#34;title&#34;, &#34;New Title&#34;); 这将将该元素的 title 属性设置为 &ldquo;New Title&rdquo;">
 
 
-<meta property="og:description" content="对象基本概念 JavaScript 的设计是一个简单的基于对象的范式。一个对象就是一系列属性的集合，一个属性包含一个名和一个值。一个属性的值可以是函数，这种情况下属性也被称为方法。 对象就是一组&quot;键值对&quot;（key-value）,是一种无序的复合数据集合 对象的每一个键名又称为“属性”（property），它的“键值”可以是任何数据类型。 键名是字符串，不是标识符，可以包含任意字符 引号可以省略，省略之后就只能写标识符，就算引号省略，键名也还是字符串 可以通过 Object.keys(obj)得到所有 obj 的所有 key 如果键名不符合标识名的条件（比如第一个字符为数字，或者含有空格或运算符），且也不是数字，则必须加上引号，否则会报错。 对象中未赋值的属性的值为undefined（而不是null） 声明对象的两种语法 简单写法: let obj={ &#39;name&#39;:&#39;frank&#39;,&#39;age&#39;:18 } 正规写法： let obj = new Object({ name: &#34;frank&#34;, }); 如何删除对象的属性 可以用 delete 操作符删除一个不是继承而来的属性。下面的例子说明如何删除一个属性： //Creates a new object, myobj, with two properties, a and b. var myobj = new Object; myobj.a = 5; myobj.b = 12; //Removes the a property, leaving myobj with only the b property. delete myobj.a; 如果一个全局变量不是用 var 关键字声明的话，你也可以用 delete 删除它 如何查看对象的属性 for&hellip;in 循环 该方法依次访问一个对象及其原型链中所有可枚举的属性。 Object.">
+<meta property="og:description" content="jQuery 如何获取元素 要使用 jQuery 获取元素，可以使用 $() 或 jQuery() 函数，将 CSS 选择器作为参数传递进去，以获取满足选择器条件的元素。例如： var elements = $(&#34;.example&#34;); 这将返回一个 jQuery 对象，其中包含所有满足条件的元素。可以通过该对象上的各种方法和属性来操作这些元素。例如：
+var text = $(&#34;.example&#34;).addclass(&#34;red&#34;).find(&#34;.example&#34;); jQuery 的链式操作是怎样的 jQuery 的链式操作是一种将多个 jQuery 方法链接在一起的技术，以便在同一行代码中对同一组元素进行多个操作。 链式操作的基本原理是，每个 jQuery 方法都返回一个 jQuery 对象，该对象可以继续调用其他 jQuery 方法。例如: $(&#34;#Element&#34;).addClass(&#34;red&#34;).css(&#34;color&#34;, &#34;green&#34;).show(); jQuery 如何创建元素 要使用 jQuery 创建新的元素，可以使用 $() 函数，将 HTML 标记作为参数传递进去，以创建一个新的 jQuery 对象。例如: var div1 = $(&#34;&lt;div&gt;&lt;/div&gt;&#34;); jQuery 如何移动元素 要使用 jQuery 移动元素，可以使用它的一些 DOM 操作方法，例如 detach()、append()等。这些方法可以将元素从一个位置移动到另一个位置。 jQuery 如何修改元素的属性 使用 jQuery 修改元素的属性，可以使用 attr() 方法。这个方法可以设置或获取元素的属性值。例如: $(&#34;#element&#34;).attr(&#34;title&#34;, &#34;New Title&#34;); 这将将该元素的 title 属性设置为 &ldquo;New Title&rdquo;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JS 对象基本用法">
-<meta name="twitter:title" content="JS 对象基本用法">
-<meta property="og:url" content="https://delta5738.github.io/post/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/">
-<meta property="twitter:url" content="https://delta5738.github.io/post/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/">
+<meta property="og:title" content=" jQuery功能01">
+<meta name="twitter:title" content=" jQuery功能01">
+<meta property="og:url" content="https://delta5738.github.io/post/jquery%E5%8A%9F%E8%83%BD1/">
+<meta property="twitter:url" content="https://delta5738.github.io/post/jquery%E5%8A%9F%E8%83%BD1/">
 <meta property="og:site_name" content="Hugo tranquilpeak theme">
-<meta property="og:description" content="对象基本概念 JavaScript 的设计是一个简单的基于对象的范式。一个对象就是一系列属性的集合，一个属性包含一个名和一个值。一个属性的值可以是函数，这种情况下属性也被称为方法。 对象就是一组&quot;键值对&quot;（key-value）,是一种无序的复合数据集合 对象的每一个键名又称为“属性”（property），它的“键值”可以是任何数据类型。 键名是字符串，不是标识符，可以包含任意字符 引号可以省略，省略之后就只能写标识符，就算引号省略，键名也还是字符串 可以通过 Object.keys(obj)得到所有 obj 的所有 key 如果键名不符合标识名的条件（比如第一个字符为数字，或者含有空格或运算符），且也不是数字，则必须加上引号，否则会报错。 对象中未赋值的属性的值为undefined（而不是null） 声明对象的两种语法 简单写法: let obj={ &#39;name&#39;:&#39;frank&#39;,&#39;age&#39;:18 } 正规写法： let obj = new Object({ name: &#34;frank&#34;, }); 如何删除对象的属性 可以用 delete 操作符删除一个不是继承而来的属性。下面的例子说明如何删除一个属性： //Creates a new object, myobj, with two properties, a and b. var myobj = new Object; myobj.a = 5; myobj.b = 12; //Removes the a property, leaving myobj with only the b property. delete myobj.a; 如果一个全局变量不是用 var 关键字声明的话，你也可以用 delete 删除它 如何查看对象的属性 for&hellip;in 循环 该方法依次访问一个对象及其原型链中所有可枚举的属性。 Object.">
-<meta name="twitter:description" content="对象基本概念 JavaScript 的设计是一个简单的基于对象的范式。一个对象就是一系列属性的集合，一个属性包含一个名和一个值。一个属性的值可以是函数，这种情况下属性也被称为方法。 对象就是一组&quot;键值对&quot;（key-value）,是一种无序的复合数据集合 对象的每一个键名又称为“属性”（property），它的“键值”可以是任何数据类型。 键名是字符串，不是标识符，可以包含任意字符 引号可以省略，省略之后就只能写标识符，就算引号省略，键名也还是字符串 可以通过 Object.keys(obj)得到所有 obj 的所有 key 如果键名不符合标识名的条件（比如第一个字符为数字，或者含有空格或运算符），且也不是数字，则必须加上引号，否则会报错。 对象中未赋值的属性的值为undefined（而不是null） 声明对象的两种语法 简单写法: let obj={ &#39;name&#39;:&#39;frank&#39;,&#39;age&#39;:18 } 正规写法： let obj = new Object({ name: &#34;frank&#34;, }); 如何删除对象的属性 可以用 delete 操作符删除一个不是继承而来的属性。下面的例子说明如何删除一个属性： //Creates a new object, myobj, with two properties, a and b. var myobj = new Object; myobj.a = 5; myobj.b = 12; //Removes the a property, leaving myobj with only the b property. delete myobj.a; 如果一个全局变量不是用 var 关键字声明的话，你也可以用 delete 删除它 如何查看对象的属性 for&hellip;in 循环 该方法依次访问一个对象及其原型链中所有可枚举的属性。 Object.">
+<meta property="og:description" content="jQuery 如何获取元素 要使用 jQuery 获取元素，可以使用 $() 或 jQuery() 函数，将 CSS 选择器作为参数传递进去，以获取满足选择器条件的元素。例如： var elements = $(&#34;.example&#34;); 这将返回一个 jQuery 对象，其中包含所有满足条件的元素。可以通过该对象上的各种方法和属性来操作这些元素。例如：
+var text = $(&#34;.example&#34;).addclass(&#34;red&#34;).find(&#34;.example&#34;); jQuery 的链式操作是怎样的 jQuery 的链式操作是一种将多个 jQuery 方法链接在一起的技术，以便在同一行代码中对同一组元素进行多个操作。 链式操作的基本原理是，每个 jQuery 方法都返回一个 jQuery 对象，该对象可以继续调用其他 jQuery 方法。例如: $(&#34;#Element&#34;).addClass(&#34;red&#34;).css(&#34;color&#34;, &#34;green&#34;).show(); jQuery 如何创建元素 要使用 jQuery 创建新的元素，可以使用 $() 函数，将 HTML 标记作为参数传递进去，以创建一个新的 jQuery 对象。例如: var div1 = $(&#34;&lt;div&gt;&lt;/div&gt;&#34;); jQuery 如何移动元素 要使用 jQuery 移动元素，可以使用它的一些 DOM 操作方法，例如 detach()、append()等。这些方法可以将元素从一个位置移动到另一个位置。 jQuery 如何修改元素的属性 使用 jQuery 修改元素的属性，可以使用 attr() 方法。这个方法可以设置或获取元素的属性值。例如: $(&#34;#element&#34;).attr(&#34;title&#34;, &#34;New Title&#34;); 这将将该元素的 title 属性设置为 &ldquo;New Title&rdquo;">
+<meta name="twitter:description" content="jQuery 如何获取元素 要使用 jQuery 获取元素，可以使用 $() 或 jQuery() 函数，将 CSS 选择器作为参数传递进去，以获取满足选择器条件的元素。例如： var elements = $(&#34;.example&#34;); 这将返回一个 jQuery 对象，其中包含所有满足条件的元素。可以通过该对象上的各种方法和属性来操作这些元素。例如：
+var text = $(&#34;.example&#34;).addclass(&#34;red&#34;).find(&#34;.example&#34;); jQuery 的链式操作是怎样的 jQuery 的链式操作是一种将多个 jQuery 方法链接在一起的技术，以便在同一行代码中对同一组元素进行多个操作。 链式操作的基本原理是，每个 jQuery 方法都返回一个 jQuery 对象，该对象可以继续调用其他 jQuery 方法。例如: $(&#34;#Element&#34;).addClass(&#34;red&#34;).css(&#34;color&#34;, &#34;green&#34;).show(); jQuery 如何创建元素 要使用 jQuery 创建新的元素，可以使用 $() 函数，将 HTML 标记作为参数传递进去，以创建一个新的 jQuery 对象。例如: var div1 = $(&#34;&lt;div&gt;&lt;/div&gt;&#34;); jQuery 如何移动元素 要使用 jQuery 移动元素，可以使用它的一些 DOM 操作方法，例如 detach()、append()等。这些方法可以将元素从一个位置移动到另一个位置。 jQuery 如何修改元素的属性 使用 jQuery 修改元素的属性，可以使用 attr() 方法。这个方法可以设置或获取元素的属性值。例如: $(&#34;#element&#34;).attr(&#34;title&#34;, &#34;New Title&#34;); 这将将该元素的 title 属性设置为 &ldquo;New Title&rdquo;">
 <meta property="og:locale" content="zh-cn">
 
   
-    <meta property="article:published_time" content="2022-09-08T01:03:39">
-  
-  
-    <meta property="article:modified_time" content="2022-09-08T01:03:39">
   
   
   
@@ -69,14 +69,14 @@
 
 
 
-    <title>JS 对象基本用法</title>
+    <title> jQuery功能01</title>
 
     <link rel="icon" href="https://delta5738.github.io/favicon.png">
     
 
     
 
-    <link rel="canonical" href="https://delta5738.github.io/post/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/">
+    <link rel="canonical" href="https://delta5738.github.io/post/jquery%E5%8A%9F%E8%83%BD1/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -236,15 +236,15 @@
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title">
-      JS 对象基本用法
+       jQuery功能01
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time datetime="2022-09-08T01:03:39&#43;09:00">
+      <time datetime="0001-01-01T00:00:00Z">
         
-  九月 8, 2022
+  一月 1, 1
 
       </time>
     
@@ -255,82 +255,34 @@
           
           <div class="post-content markdown">
             <div class="main-content-wrap">
-              <h1 id="对象基本概念">对象基本概念</h1>
+              <h1 id="jquery-如何获取元素">jQuery 如何获取元素</h1>
 <ul>
-<li>JavaScript 的设计是一个简单的基于对象的范式。一个对象就是一系列属性的集合，一个属性包含一个名和一个值。一个属性的值可以是函数，这种情况下属性也被称为方法。<!-- raw HTML omitted --></li>
-<li>对象就是一组&quot;键值对&quot;（key-value）,是一种无序的复合数据集合<!-- raw HTML omitted --></li>
-<li>对象的每一个键名又称为“属性”（property），它的“键值”可以是任何数据类型。</li>
-<li>键名是字符串，不是标识符，可以包含任意字符<!-- raw HTML omitted --></li>
-<li>引号可以省略，省略之后就只能写标识符，就算引号省略，键名也还是字符串<!-- raw HTML omitted --></li>
-<li>可以通过 Object.keys(obj)得到所有 obj 的所有 key</li>
-<li>如果键名不符合标识名的条件（比如第一个字符为数字，或者含有空格或运算符），且也不是数字，则必须加上引号，否则会报错。</li>
-<li>对象中未赋值的属性的值为undefined（而不是null）</li>
+<li>要使用 jQuery 获取元素，可以使用 $() 或 jQuery() 函数，将 CSS 选择器作为参数传递进去，以获取满足选择器条件的元素。例如：</li>
 </ul>
-<h1 id="声明对象的两种语法">声明对象的两种语法</h1>
+<pre tabindex="0"><code>var elements = $(&#34;.example&#34;);
+</code></pre><p>这将返回一个 jQuery 对象，其中包含所有满足条件的元素。可以通过该对象上的各种方法和属性来操作这些元素。例如：</p>
+<pre tabindex="0"><code>var text = $(&#34;.example&#34;).addclass(&#34;red&#34;).find(&#34;.example&#34;);
+</code></pre><h1 id="jquery-的链式操作是怎样的">jQuery 的链式操作是怎样的</h1>
 <ul>
-<li>简单写法:</li>
+<li>jQuery 的链式操作是一种将多个 jQuery 方法链接在一起的技术，以便在同一行代码中对同一组元素进行多个操作。</li>
+<li>链式操作的基本原理是，每个 jQuery 方法都返回一个 jQuery 对象，该对象可以继续调用其他 jQuery 方法。例如:</li>
 </ul>
-<pre tabindex="0"><code>let obj={
- &#39;name&#39;:&#39;frank&#39;,&#39;age&#39;:18
-}
-</code></pre><ul>
-<li>正规写法：</li>
-</ul>
-<pre tabindex="0"><code>let obj = new Object({
- name: &#34;frank&#34;,
-});
-</code></pre><h1 id="如何删除对象的属性">如何删除对象的属性</h1>
+<pre tabindex="0"><code>$(&#34;#Element&#34;).addClass(&#34;red&#34;).css(&#34;color&#34;, &#34;green&#34;).show();
+</code></pre><h1 id="jquery-如何创建元素">jQuery 如何创建元素</h1>
 <ul>
-<li>可以用 delete 操作符删除一个不是继承而来的属性。下面的例子说明如何删除一个属性：</li>
+<li>要使用 jQuery 创建新的元素，可以使用 $() 函数，将 HTML 标记作为参数传递进去，以创建一个新的 jQuery 对象。例如:</li>
 </ul>
-<pre tabindex="0"><code>//Creates a new object, myobj, with two properties, a and b.
-var myobj = new Object;
-myobj.a = 5;
-myobj.b = 12;
-
-//Removes the a property, leaving myobj with only the b property.
-delete myobj.a;
-</code></pre><ul>
-<li>如果一个全局变量不是用 var 关键字声明的话，你也可以用 delete 删除它</li>
-</ul>
-<h1 id="如何查看对象的属性">如何查看对象的属性</h1>
+<pre tabindex="0"><code>var div1 = $(&#34;&lt;div&gt;&lt;/div&gt;&#34;);
+</code></pre><h1 id="jquery-如何移动元素">jQuery 如何移动元素</h1>
 <ul>
-<li>for&hellip;in 循环 该方法依次访问一个对象及其原型链中所有可枚举的属性。</li>
-<li>Object.keys(o) 该方法返回对象 o 自身包含（不包括原型中）的所有可枚举属性的名称的数组。</li>
-<li>Object.getOwnPropertyNames(o) 该方法返回对象 o 自身包含（不包括原型中）的所有属性 (无论是否可枚举) 的名称的数组。</li>
-<li>查看一个对象自身+共有属性：<!-- raw HTML omitted -->
-console.dir(obj)<!-- raw HTML omitted -->
-Object.keys 打印出 obj.<strong>proto</strong><!-- raw HTML omitted --></li>
-<li>判断一个对象是自身属性还是共有属性：<!-- raw HTML omitted -->
-obj.hasOwnProperty(&rsquo;toString')</li>
+<li>要使用 jQuery 移动元素，可以使用它的一些 DOM 操作方法，例如 detach()、append()等。这些方法可以将元素从一个位置移动到另一个位置。</li>
 </ul>
-<h1 id="如何修改或增加对象的属性">如何修改或增加对象的属性</h1>
+<h1 id="jquery-如何修改元素的属性">jQuery 如何修改元素的属性</h1>
 <ul>
-<li>直接赋值</li>
+<li>使用 jQuery 修改元素的属性，可以使用 attr() 方法。这个方法可以设置或获取元素的属性值。例如:</li>
 </ul>
-<pre tabindex="0"><code>let obj ={name:&#39;frank&#39;} //name是字符串
-obj.name=&#39;frank&#39;
-obj[&#39;name&#39;]=&#39;frank&#39;
-obj[name]=&#39;frank&#39; //是错误的，因为name的值不确定
-obj[&#39;na&#39;+&#39;me&#39;]=&#39;frank&#39;
-let key=&#39;name&#39;, obj[key]:&#39;frank&#39; //声明变量
-let key=&#39;name&#39;;obj.key=&#39;frank&#39; //错误，因为obj.key等价于obj.[&#39;key&#39;]
-</code></pre><ul>
-<li>批量赋值</li>
-</ul>
-<pre tabindex="0"><code>Object.assign(obj.{age:18,gender:&#39;man&#39;})
-</code></pre><ul>
-<li>修改隐藏属性:Object.create:</li>
-</ul>
-<pre tabindex="0"><code>let obj=Object.create(common),
-obj.name=&#39;frank&#39;,
-let obj2=Object.create(common),
-obj2.name=&#39;jack&#39;
-</code></pre><h2 id="name-in-obj-和-objhasownpropertyname-的区别">&rsquo;name&rsquo; in obj 和 obj.hasOwnProperty(&rsquo;name&rsquo;) 的区别</h2>
-<ul>
-<li>&lsquo;xxx&rsquo; in obj 并不知道查看的是自身属性还是共有属性；</li>
-<li>obj.hasOwnProperty(‘xxx&rsquo;)查看的是自身的属性</li>
-</ul>
+<pre tabindex="0"><code>$(&#34;#element&#34;).attr(&#34;title&#34;, &#34;New Title&#34;);
+</code></pre><p>这将将该元素的 title 属性设置为 &ldquo;New Title&rdquo;</p>
 
               
 
@@ -348,7 +300,7 @@ obj2.name=&#39;jack&#39;
       
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="https://delta5738.github.io/post/js%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/" data-tooltip="JS函数的执行时机" aria-label="下一篇: JS函数的执行时机">
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://delta5738.github.io/post/html-markup-2/" data-tooltip="HTML标签学习2" aria-label="下一篇: HTML标签学习2">
           
               <i class="fa fa-angle-left"></i>
               <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -356,7 +308,7 @@ obj2.name=&#39;jack&#39;
         </li>
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="https://delta5738.github.io/post/js%E8%AF%AD%E6%B3%951/" data-tooltip="JavaScript的语法(一)" aria-label="上一篇: JavaScript的语法(一)">
+            <a class="post-action-btn btn btn--disabled">
           
               <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
               <i class="fa fa-angle-right"></i>
@@ -374,19 +326,19 @@ obj2.name=&#39;jack&#39;
     </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://delta5738.github.io/post/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" title="分享到 Facebook" aria-label="分享到 Facebook">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://delta5738.github.io/post/jquery%E5%8A%9F%E8%83%BD1/" title="分享到 Facebook" aria-label="分享到 Facebook">
           <i class="fab fa-facebook-square" aria-hidden="true"></i>
         </a>
       </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://delta5738.github.io/post/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" title="分享到 Twitter" aria-label="分享到 Twitter">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://delta5738.github.io/post/jquery%E5%8A%9F%E8%83%BD1/" title="分享到 Twitter" aria-label="分享到 Twitter">
           <i class="fab fa-twitter" aria-hidden="true"></i>
         </a>
       </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://delta5738.github.io/post/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" title="分享到 Linkedin" aria-label="分享到 Linkedin">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://delta5738.github.io/post/jquery%E5%8A%9F%E8%83%BD1/" title="分享到 Linkedin" aria-label="分享到 Linkedin">
           <i class="fab fa-linkedin" aria-hidden="true"></i>
         </a>
       </li>
@@ -417,9 +369,9 @@ obj2.name=&#39;jack&#39;
     </div>
     <script type="text/javascript">
       var disqus_config = function() {
-        this.page.url = 'https:\/\/delta5738.github.io\/post\/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95\/';
+        this.page.url = 'https:\/\/delta5738.github.io\/post\/jquery%E5%8A%9F%E8%83%BD1\/';
         
-          this.page.identifier = '\/post\/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95\/'
+          this.page.identifier = '\/post\/jquery%E5%8A%9F%E8%83%BD1\/'
         
       };
       (function() {
@@ -455,7 +407,7 @@ obj2.name=&#39;jack&#39;
       
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="https://delta5738.github.io/post/js%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/" data-tooltip="JS函数的执行时机" aria-label="下一篇: JS函数的执行时机">
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://delta5738.github.io/post/html-markup-2/" data-tooltip="HTML标签学习2" aria-label="下一篇: HTML标签学习2">
           
               <i class="fa fa-angle-left"></i>
               <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -463,7 +415,7 @@ obj2.name=&#39;jack&#39;
         </li>
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="https://delta5738.github.io/post/js%E8%AF%AD%E6%B3%951/" data-tooltip="JavaScript的语法(一)" aria-label="上一篇: JavaScript的语法(一)">
+            <a class="post-action-btn btn btn--disabled">
           
               <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
               <i class="fa fa-angle-right"></i>
@@ -481,19 +433,19 @@ obj2.name=&#39;jack&#39;
     </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://delta5738.github.io/post/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" title="分享到 Facebook" aria-label="分享到 Facebook">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://delta5738.github.io/post/jquery%E5%8A%9F%E8%83%BD1/" title="分享到 Facebook" aria-label="分享到 Facebook">
           <i class="fab fa-facebook-square" aria-hidden="true"></i>
         </a>
       </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://delta5738.github.io/post/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" title="分享到 Twitter" aria-label="分享到 Twitter">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://delta5738.github.io/post/jquery%E5%8A%9F%E8%83%BD1/" title="分享到 Twitter" aria-label="分享到 Twitter">
           <i class="fab fa-twitter" aria-hidden="true"></i>
         </a>
       </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://delta5738.github.io/post/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" title="分享到 Linkedin" aria-label="分享到 Linkedin">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://delta5738.github.io/post/jquery%E5%8A%9F%E8%83%BD1/" title="分享到 Linkedin" aria-label="分享到 Linkedin">
           <i class="fab fa-linkedin" aria-hidden="true"></i>
         </a>
       </li>
@@ -524,19 +476,19 @@ obj2.name=&#39;jack&#39;
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdelta5738.github.io%2Fpost%2Fjs%25E5%25AF%25B9%25E8%25B1%25A1%25E5%259F%25BA%25E6%259C%25AC%25E7%2594%25A8%25E6%25B3%2595%2F" aria-label="分享到 Facebook">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdelta5738.github.io%2Fpost%2Fjquery%25E5%258A%259F%25E8%2583%25BD1%2F" aria-label="分享到 Facebook">
           <i class="fab fa-facebook-square" aria-hidden="true"></i><span>分享到 Facebook</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fdelta5738.github.io%2Fpost%2Fjs%25E5%25AF%25B9%25E8%25B1%25A1%25E5%259F%25BA%25E6%259C%25AC%25E7%2594%25A8%25E6%25B3%2595%2F" aria-label="分享到 Twitter">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fdelta5738.github.io%2Fpost%2Fjquery%25E5%258A%259F%25E8%2583%25BD1%2F" aria-label="分享到 Twitter">
           <i class="fab fa-twitter" aria-hidden="true"></i><span>分享到 Twitter</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fdelta5738.github.io%2Fpost%2Fjs%25E5%25AF%25B9%25E8%25B1%25A1%25E5%259F%25BA%25E6%259C%25AC%25E7%2594%25A8%25E6%25B3%2595%2F" aria-label="分享到 Linkedin">
+        <a class="share-option-btn" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fdelta5738.github.io%2Fpost%2Fjquery%25E5%258A%259F%25E8%2583%25BD1%2F" aria-label="分享到 Linkedin">
           <i class="fab fa-linkedin" aria-hidden="true"></i><span>分享到 Linkedin</span>
         </a>
       </li>

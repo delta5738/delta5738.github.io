@@ -221,5 +221,15 @@ button标签表示一个可点击的按钮，可以用在表单或文档其它�
 &lt;/ul&gt;</description>
     </item>
     
+    <item>
+      <title> jQuery功能01</title>
+      <link>https://delta5738.github.io/post/jquery%E5%8A%9F%E8%83%BD1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://delta5738.github.io/post/jquery%E5%8A%9F%E8%83%BD1/</guid>
+      <description>jQuery 如何获取元素 要使用 jQuery 获取元素，可以使用 $() 或 jQuery() 函数，将 CSS 选择器作为参数传递进去，以获取满足选择器条件的元素。例如： var elements = $(&amp;#34;.example&amp;#34;); 这将返回一个 jQuery 对象，其中包含所有满足条件的元素。可以通过该对象上的各种方法和属性来操作这些元素。例如：
+var text = $(&amp;#34;.example&amp;#34;).addclass(&amp;#34;red&amp;#34;).find(&amp;#34;.example&amp;#34;); jQuery 的链式操作是怎样的 jQuery 的链式操作是一种将多个 jQuery 方法链接在一起的技术，以便在同一行代码中对同一组元素进行多个操作。 链式操作的基本原理是，每个 jQuery 方法都返回一个 jQuery 对象，该对象可以继续调用其他 jQuery 方法。例如: $(&amp;#34;#Element&amp;#34;).addClass(&amp;#34;red&amp;#34;).css(&amp;#34;color&amp;#34;, &amp;#34;green&amp;#34;).show(); jQuery 如何创建元素 要使用 jQuery 创建新的元素，可以使用 $() 函数，将 HTML 标记作为参数传递进去，以创建一个新的 jQuery 对象。例如: var div1 = $(&amp;#34;&amp;lt;div&amp;gt;&amp;lt;/div&amp;gt;&amp;#34;); jQuery 如何移动元素 要使用 jQuery 移动元素，可以使用它的一些 DOM 操作方法，例如 detach()、append()等。这些方法可以将元素从一个位置移动到另一个位置。 jQuery 如何修改元素的属性 使用 jQuery 修改元素的属性，可以使用 attr() 方法。这个方法可以设置或获取元素的属性值。例如: $(&amp;#34;#element&amp;#34;).attr(&amp;#34;title&amp;#34;, &amp;#34;New Title&amp;#34;); 这将将该元素的 title 属性设置为 &amp;ldquo;New Title&amp;rdquo;</description>
+    </item>
+    
   </channel>
 </rss>
