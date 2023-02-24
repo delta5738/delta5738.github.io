@@ -505,6 +505,58 @@ var text = $(&#34;.example&#34;).addclass(&#34;red&#34;).find(&#34;.example&#34;
 </article>
 
           
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title">
+      
+        <a class="link-unstyled" href="https://delta5738.github.io/post/dom%E4%BA%8B%E4%BB%B6/" aria-label="打开帖子: dom事件与事件委托">
+      
+          dom事件与事件委托
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time datetime="0001-01-01T00:00:00Z">
+        
+  一月 1, 1
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt">
+      
+        DOM事件里捕获和冒泡 在DOM事件中，捕获和冒泡是事件传播的两个阶段。事件从文档根节点开始传播，经过事件目标元素，最终到达文档根节点。在这个过程中，事件可以通过两个不同的传播阶段，即捕获阶段和冒泡阶段 从外向内找监听函数,叫事件捕获 从内向外找监听函数,叫事件冒泡 W3C的事件模型规定先捕获再冒泡 捕获阶段,事件从文档根节点开始向下传播，直到达到事件目标元素的祖先元素。这意味着，在事件目标元素上注册的捕获事件处理程序将首先被调用，而在祖先元素上注册的捕获事件处理程序将按顺序依次调用 冒泡阶段，事件从事件目标元素开始向上冒泡，直到达到文档根节点。这意味着，在事件目标元素上注册的冒泡事件处理程序将最后被调用，而在祖先元素上注册的冒泡事件处理程序将按照相反的顺序依次调用 在DOM事件中，可以使用addEventListener()方法来注册事件处理程序，该方法可以接受一个可选的布尔值参数useCapture，用于指定事件处理程序是在捕获阶段还是冒泡阶段调用 如果将useCapture设置为true，则事件处理程序将在捕获阶段被调用，如果将其设置为false，则事件处理程序将在冒泡阶段被调用。如果未提供该参数，则默认为false，即事件处理程序将在冒泡阶段被调用 DOM事件委托 DOM事件委托，它利用事件冒泡机制，在父元素上注册事件处理程序，以代理处理子元素的事件 通常情况下，如果需要处理多个相同类型的子元素的事件时，比如给多个按钮添加点击事件，需要分别获取每个子元素，并为它们分别添加事件监听器。这样做的问题在于，每个子元素都需要注册一个事件处理程序，当子元素的数量增多时，处理程序的数量也会增加，这会占用大量内存，造成性能问题 使用DOM事件委托，可以将事件处理程序注册在父元素上，当子元素触发事件时，事件会沿着DOM树向上传播，被父元素所捕获。然后可以使用事件对象中的属性来判断具体是哪个子元素触发了事件，并执行相应的处理逻辑。这种方式可以减少事件处理程序的数量，提高代码的性能和可维护性 
+      
+      <p>
+        
+          <a href="https://delta5738.github.io/post/dom%E4%BA%8B%E4%BB%B6/" class="postShorten-excerpt_link link" aria-label="打开帖子: dom事件与事件委托">阅读全文</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
           
   <div class="pagination-bar">
     <ul class="pagination">
